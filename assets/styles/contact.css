@@ -1,0 +1,60 @@
+.contact {
+    padding: 60px 20px;
+    max-width: 800px;  /* Aumenta el ancho del formulario */
+    margin: auto;
+    text-align: center;
+}
+
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact input, .contact textarea {
+    font-size: 1.2rem; /* Aumenta el tamaño de la fuente */
+    padding: 15px;  /* Aumenta el relleno */
+    margin: 15px 0;
+    width: 100%;
+    max-width: 700px; /* Asegura que el formulario no se haga demasiado ancho */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.contact textarea {
+    resize: vertical; /* Permite que se ajuste la altura del textarea */
+    height: 150px; /* Aumenta la altura del área de texto */
+}
+
+.contact input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 700px;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

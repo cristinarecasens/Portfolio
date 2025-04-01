@@ -1,0 +1,34 @@
+.education-container {
+    display: flex;
+    flex-direction: column;  /* Asegura que los items se apilen verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center;     /* Centra el contenido verticalmente */
+    padding: 0px;           /* Agrega algo de espacio alrededor */
+    min-height: auto
+}
+
+.education-item {
+    background-color: white;  /* Fondo blanco */
+    padding: 20px;
+    margin: 20px 0;           /* Espaciado entre los recuadros */
+    border-radius: 10px;      /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+    text-align: left;         /* Alineación del texto a la izquierda */
+    max-width: 700px;         /* Establece el ancho máximo del item */
+    width: 100%;              /* Asegura que ocupe el ancho máximo posible */
+}
+
+.education-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.education-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.education-item img {
+    width: 300px; /* Tamaño más grande */
+    height: auto; /* Tamaño más grande */
+}

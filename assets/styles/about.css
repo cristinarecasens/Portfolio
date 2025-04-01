@@ -1,0 +1,34 @@
+
+.about {
+    padding: 60px 20px;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: #c4d6e2;
+}
+
+.about-container {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+    gap: 20px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+.about-image {
+    width: 250px;  
+    height: 300px;  
+    overflow: hidden; 
+}
+
+.about-image img {
+    width: 100%;  
+    height: 100%;  
+    object-fit: cover;  
+}
+
+.about-text {
+    text-align: justify;  
+    max-width: 800px;  
+}
