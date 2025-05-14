@@ -27,29 +27,40 @@ nav {
     left: 50%;
     transform: translateX(-50%);
     background: white;
-    padding: 10px 40px; /* Aumenté el padding para hacer el nav más ancho */
+    padding: 10px 40px;
     border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     gap: 15px;
-    align-items: center; /* Centra los elementos verticalmente */
+    align-items: center;
+    justify-content: center;
     z-index: 1000;
-    width: 80%; /* Asegura que el nav sea más ancho */
-    max-width: 900px; /* Evita que se haga demasiado grande en pantallas muy grandes */
+    width: 80%;
+    max-width: 1100px;
 }
 
 nav a {
     text-decoration: none;
     color: #333;
-    padding: 10px 15px;
+    padding: 10px 20px;
     border-radius: 20px;
+    font-weight: 400;
+    text-align: center;
+    min-width: 90px;
+    display: inline-block;
     transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    font-weight: bold; /* o usar transform: scale(...) si prefieres */
 }
 
 nav a.active {
     background-color: #c4d6e2;
     color: white;
+    font-weight: bold;
 }
+
 
 /* Contenedor de las banderas */
 nav .flags {
@@ -58,7 +69,9 @@ nav .flags {
     align-items: center;
     justify-content: flex-end; /* Alinea las banderas a la derecha */
     margin-left:40px;
+    justify-content: center;
 }
+
 
 /* Estilo para las banderas */
 nav .flag {
@@ -68,6 +81,7 @@ nav .flag {
     background-size: cover; /* Asegura que la imagen se ajuste al tamaño del contenedor */
     background-position: center; /* Centra la imagen dentro del contenedor */
     opacity: 50%;
+
 }
 
 nav .flag.selected {
@@ -81,6 +95,72 @@ nav .flag-link {
     justify-content: center; /* Alineamos la imagen dentro del enlace */
     margin: 0; /* Eliminamos cualquier margen por defecto */
     padding: 0; /* Eliminamos cualquier padding por defecto */
+    min-width: 0px;
+}
+
+/* Botón hamburguesa oculto por defecto */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  border-radius: 2px;
+}
+
+/* NUEVO: Estilo por defecto en escritorio */
+.menu-content {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+/* Responsive: ocultar menu-content y mostrar botón */
+@media (max-width: 1100px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  /* Estilo vertical para móvil */
+  .menu-content {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav.show .menu-content {
+    display: flex;
+  }
+
+  .menu-content a {
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .flags {
+    display: flex;
+    justify-content: center; /* Asegura que las banderas se centren en el menú */
+    align-items: center;  /* Alinea las banderas verticalmente */
+    width: 100%;
+    margin-top: 15px;
+    gap: 5px; /* Reducido para acercar las banderas */
+  }
+
+
 }
 
 section {
