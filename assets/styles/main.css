@@ -7,6 +7,7 @@ body {
     scroll-behavior: smooth;
 }
 
+
 header {
     text-align: center;
     padding: 400px;
@@ -16,7 +17,7 @@ header {
 }
 
 .content-wrapper {
-    max-width: 100%; /* Establece el ancho máximo */
+    max-width: 900px; /* Establece el ancho máximo */
     margin: 0 auto;   /* Centra el contenido */
     padding: 0px;
 }
@@ -130,6 +131,9 @@ nav .flag-link {
 
   .menu-toggle {
     display: flex;
+    justify-content: center; /* Centra los tres puntos */
+    align-items: center; /* Alinea verticalmente */
+    width: 100%; /* Hace que ocupe toda la barra */
   }
 
   /* Estilo vertical para móvil */
@@ -159,8 +163,7 @@ nav .flag-link {
     margin-top: 15px;
     gap: 5px; /* Reducido para acercar las banderas */
   }
-
-
+  
 }
 
 section {
@@ -254,17 +257,6 @@ footer {
 
 /* PI: Reglas para hacer el diseño responsive */
 @media only screen and (max-width: 768px) {
-    /* Menú de navegación */
-    nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    nav a {
-        padding: 8px 10px;
-        font-size: 1em;
-    }
 
     /* Ajustes para la imagen de "Sobre mi" */
     .about-container {
@@ -306,8 +298,9 @@ footer {
     }
 
     section h2 {
-        font-size: 1.8em;
+        font-size: 40px;
     }
+
 }
 
 /* Para pantallas muy pequeñas como dispositivos móviles de menos de 375px */
@@ -322,7 +315,7 @@ footer {
     }
 
     section h2 {
-        font-size: 1.5em;
+        font-size: 40px;
     }
 
     .about-text p {
@@ -336,4 +329,15 @@ footer {
     .btn-demo {
         font-size: 0.9em;
     }
+}
+
+h2 {
+    font-family: 'Montserrat';
+    font-size: 60px;
+    color:#5fa3e6;
+}
+
+p {
+    line-height: 1.6; /* Puedes ajustar el valor según tus necesidades */
+    font-family: 'Roboto';
 }

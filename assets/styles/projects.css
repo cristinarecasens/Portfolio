@@ -56,6 +56,23 @@
     background-color: #5fa3e6; /* Azul un poco más oscuro al pasar el ratón */
 }
 
+.btn-git {
+    display: inline-flex; /* Para colocar el SVG y el texto en una línea */
+    align-items: center; /* Alinea el SVG y el texto verticalmente */
+    padding: 12px 24px; /* Más relleno para hacerlo más grande */
+    background-color: #999999; /* Azul claro de fondo */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Eliminar subrayado en el texto */
+    border-radius: 30px; /* Bordes más redondeados */
+    font-size: 16px; /* Tamaño de la fuente */
+    transition: background-color 0.3s ease; /* Solo la transición del color de fondo */
+}
+
+/* Efecto hover */
+.btn-git:hover {
+    background-color: #7a7a7a; /* Azul un poco más oscuro al pasar el ratón */
+}
+
 /* Estilo para el SVG dentro del botón */
 .demo-icon {
     width: 24px; /* Ajusta el tamaño del SVG */
@@ -96,4 +113,27 @@
     width: 500px; /* Ajusta el tamaño de la imagen */
     height: auto; /* Mantiene la proporción de la imagen */
     margin-left: 20px; /* Añade un espacio entre el texto y la imagen */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .projects-content {
+        flex-direction: column;  /* Cambiar la dirección a columna para pantallas pequeñas */
+        text-align: center;  /* Centrar el texto y la imagen */
+    }
+
+    .project-image {
+        width: 80%;  /* La imagen ocupará el 80% del contenedor */
+        margin-left: 0;  /* Eliminar margen cuando se apilen */
+        margin: 20px;  /* Espacio entre el texto y la imagen */
+    }
+    
+    .projects-item {
+        text-align: center; /* Asegura que el texto esté centrado también en pantallas pequeñas */
+    }
+
+    .projects-buttons {
+        margin: 10px auto; /* Centra los botones horizontalmente */
+        display: inline-block; /* Cambia a bloque en línea para que se centre */
+    }
 }
