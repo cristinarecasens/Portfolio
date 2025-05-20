@@ -29,6 +29,10 @@
 @media (max-width: 768px) {
   .contact-buttons {
     grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    max-width: 100%;          /* No permitir que sobrepase el ancho del contenedor o pantalla */
+    padding: 0 10px;          /* Opcional: para no pegar a los bordes */
+    box-sizing: border-box;   /* Para que el padding no aumente el ancho total */
+  
   }
 
 }

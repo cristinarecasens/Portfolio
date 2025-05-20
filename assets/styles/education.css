@@ -50,14 +50,16 @@
         flex-direction: column; /* Los elementos se apilan en columna */
         align-items: center; /* Centra los elementos */
         width:100%;
-    
+        padding: 0 10px;
+        overflow-x: hidden;
     }
 
     .education-item {
-        width: 100%; /* Ocupa todo el ancho disponible */
+        width: calc(100% - 20px); /* Ocupa todo el ancho disponible */
         max-width: 100%; /* Asegura que se adapte correctamente */
         margin-bottom: 10px; /* Elimina los márgenes para que se ajuste bien */
         height: auto; /* Permite que el contenido ajuste su altura */
         padding: 15px; /* Ajusta el padding para que no ocupe demasiado espacio */
     }
+
 }
