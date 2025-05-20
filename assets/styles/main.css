@@ -18,11 +18,18 @@ header {
 }
 
 header h1{
-    font-family:"Courier New";
+    font-family:"Consolas";
     font-size: 80px;
 }
 
+header p{
+    color: white;
+    font-size: 20px;
+}
+
+
 .typewriter {
+    font-family:"Courier New";
     display: inline-block;             /* Necesario para animar el ancho */
     overflow: hidden;
     white-space: nowrap;
@@ -374,7 +381,7 @@ footer {
     
     /* Reducción de márgenes y espaciado para pantallas pequeñas */
     .content-wrapper {
-        padding: 10px;
+        padding: 0px;
     }
 
     nav a {
@@ -396,6 +403,10 @@ footer {
     .btn-demo {
         font-size: 0.9em;
     }
+
+    .social-buttons {
+        margin: 10px;
+    }
 }
 
 h2 {
@@ -407,4 +418,5 @@ h2 {
 p {
     line-height: 1.6; /* Puedes ajustar el valor según tus necesidades */
     font-family: 'Roboto';
+    
 }

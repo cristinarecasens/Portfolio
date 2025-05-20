@@ -21,7 +21,7 @@
     text-align: center;          /* Alineación de texto en el centro */
     width: calc(33% - 20px);      /* Ancho de los elementos, ajustado para tres elementos por fila */
     max-width: 30%;              /* Asegura que no se expanda demasiado */
-    height: 700px;               /* Altura fija para cada item */
+    height: 720px;               /* Altura fija para cada item */
     box-sizing: border-box;      /* Asegura que el padding y el border no aumenten el tamaño total del elemento */
 }
 
