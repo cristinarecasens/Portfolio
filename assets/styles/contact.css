@@ -30,6 +30,7 @@
   .contact-buttons {
     grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
   }
+
 }
 
 .contact-box:hover {
