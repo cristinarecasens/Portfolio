@@ -1,6 +1,6 @@
 .contact {
     padding: 60px 20px;
-    max-width: 800px;  /* Aumenta el ancho del formulario */
+    max-width: 800px;
     margin: auto;
     text-align: center;
 }
@@ -16,7 +16,8 @@
 
 .contact-box {
   display: flex;
-  align-items: center;
+  align-items: center;  /* Alinea los iconos verticalmente */
+  justify-content: flex-start;  /* Asegura que los iconos estén alineados a la izquierda */
   background-color: white;
   border-radius: 10px;
   padding: 20px 30px;
@@ -24,32 +25,39 @@
   text-decoration: none;
   color: inherit;
   transition: background-color 0.3s ease;
+  text-align: left;  /* Asegura que el texto esté alineado a la izquierda */
 }
-
-
 
 .contact-box:hover {
   background-color: #d8eaf7;
 }
 
+.contact-icon {
+  display: flex;
+  justify-content: center; /* Centra los iconos */
+  align-items: center;     /* Alinea verticalmente los iconos */
+  margin-right: 20px;      /* Espacio entre iconos y texto */
+}
+
 .contact-icon img {
   width: 48px;
   height: 48px;
-  margin-right: 20px;
-  color: #7a9bb8
+  color: #7a9bb8;
 }
 
 .contact-text {
   display: flex;
   flex-direction: column;
+  justify-content: center; /* Centra el texto verticalmente dentro de la columna */
+  text-align: center; /* Alinea el texto horizontalmente en el centro */
+  flex-grow: 1; /* Asegura que el texto ocupe el espacio restante */
 }
 
 .contact-title {
   font-size: 1.3rem;
   font-weight: bold;
   margin-bottom: 5px;
-  color: #7a9bb8
-
+  color: #7a9bb8;
 }
 
 .contact-info {
@@ -60,21 +68,20 @@
 @media (max-width: 768px) {
   .contact-buttons {
     grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
-    max-width: 100%;          /* No permitir que sobrepase el ancho del contenedor o pantalla */
-    padding: 0 10px;          /* Opcional: para no pegar a los bordes */
-    box-sizing: border-box;   /* Para que el padding no aumente el ancho total */
-  
-  }
-  .contact-box {
-      width: calc(100%); /* Ocupa todo el ancho disponible */
-      max-width: 100%; /* Asegura que se adapte correctamente */
-      margin-bottom: 10px; /* Elimina los márgenes para que se ajuste bien */
-      height: auto; /* Permite que el contenido ajuste su altura */
-      padding: 15px; /* Ajusta el padding para que no ocupe demasiado espacio */
+    max-width: 100%;
+    padding: 0px;
+    box-sizing: border-box;
   }
 
-  .contact-info{
+  .contact-box {
+    width: 100%;  /* Ocupa todo el ancho disponible */
+    max-width: 100%;
+    margin-bottom: 10px;
+    height: auto;
+    padding: 15px;
+  }
+
+  .contact-info {
     font-size: 12px !important;
   }
-
 }

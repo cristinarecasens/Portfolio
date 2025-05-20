@@ -78,7 +78,7 @@ nav {
     justify-content: center;
     z-index: 1000;
     width: 80%;
-    max-width: 1100px;
+    max-width: 950px;
 }
 
 nav a {
@@ -88,9 +88,12 @@ nav a {
     border-radius: 20px;
     font-weight: 400;
     text-align: center;
-    min-width: 90px;
     display: inline-block;
     transition: background 0.3s, color 0.3s;
+}
+
+nav .menu-txt a{
+    width: 110px;
 }
 
 nav a:hover {
@@ -207,14 +210,22 @@ nav .flag-link {
     text-align: center;
   }
 
+
+  nav .menu-txt a{
+    width: 100%;
+}
+
   .flags {
     display: flex;
     justify-content: center; /* Asegura que las banderas se centren en el menú */
     align-items: center;  /* Alinea las banderas verticalmente */
     width: 100%;
     margin-top: 15px;
-    gap: 5px; /* Reducido para acercar las banderas */
+    gap: 0px; /* Reducido para acercar las banderas */
+    padding:0px;
+
   }
+
 
   h2{
     font-size: 50px !important;

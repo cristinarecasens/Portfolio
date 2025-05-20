@@ -7,6 +7,14 @@
     background-color: #ffffff;
 }
 
+.about h2{
+    margin-bottom: 20px;
+}
+
+.about p {
+  margin-bottom: 10px;  
+}
+
 .about-container {
     display: flex;
     align-items: center; 
