@@ -212,6 +212,8 @@ nav .flag-link {
   h2{
     font-size: 50px !important;
   }
+
+  
   
 }
 
@@ -305,19 +307,6 @@ footer {
     margin-right: 10px; /* Espacio entre el icono y el texto */
 }
 
-.social-buttons a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 12px 30px;
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 50px; /* Bordes redondeados */
-    transition: background-color 0.3s ease;
-    text-transform: capitalize;
-}
 
 .g-recaptcha {
     margin: 20px 0;
@@ -372,10 +361,9 @@ footer {
     section h2 {
         font-size: 40px;
     }
-        .social-buttons a {
-
-        padding: 10px;
-        margin: 10px;
+    
+    .social-buttons a{
+        margin: 5px;
     }
 
 }
@@ -415,12 +403,10 @@ footer {
         font-size: 0.9em;
     }
 
-    .social-buttons a {
-
-        padding: 10px;
-        margin: 10px;
+    .social-buttons a{
+        margin: 5px;
     }
-
+}
 
 h2 {
     font-family: 'Courier New';
@@ -433,4 +419,4 @@ p {
     font-family: 'Roboto';
     
 }
-}
+
