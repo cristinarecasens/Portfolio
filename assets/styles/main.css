@@ -1,3 +1,9 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -376,7 +382,7 @@ footer {
     }
 
     header {
-        padding: 40px 20px; /* mucho más pequeño */
+        padding: 100%; /* mucho más pequeño */
         box-sizing: border-box;
     }
 
