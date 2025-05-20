@@ -47,7 +47,6 @@
             <a href="#about" class="nav-link">Sobre mi</a>
             <a href="#projects" class="nav-link">Proyectos</a>
             <a href="#skills" class="nav-link">Habilidades</a>
-            <a href="#experience" class="nav-link">Experiencia</a>
             <a href="#education" class="nav-link">Educación</a>
             <a href="#contact" class="nav-link">Contacto</a>
 
@@ -249,22 +248,6 @@
             </div>
         </section>
 
-        <!--EXPERIENCIA PROFESIONAL-->
-        <section id="experience" class="experience">
-            <h2>Experiencia</h2>
-            <div class="experience-item">
-                <h3>Desarrollo de aplicaciones científicas y análisis de datos.</h3>
-                <h4>IRTA</h4>
-                <p>Septiembre 2024 - Junio 2025</p>
-                <p>Desarrollo de software con Python (Matplotlib, Numpy, Pandas, Streamlit) y análsis de datos (MySQL y Python).</p>
-            </div>
-            <div class="experience-item">
-                <h3>SEFaS</h3>
-                <p>Febrero 2017 - Septimebre 2017</p>
-                <p>Estudio estadístico usando R y QGiS para estudiar el comportamiento del jabalí en el parque natural de Collserola y la ciudad de Barcelona.</p>
-            </div>
-        </section>
-
         <!--EDUCACIÓN-->
         <section id="education" class="education">
             <h2>Educación</h2>
@@ -297,24 +280,49 @@
 
         <section id="contact" class="contact">
             <h2>Contacto</h2>
-            <form action="YOUR_FORM_HANDLER_URL" method="POST">
-                <input type="text" name="name" placeholder="Tu nombre" required>
-                <input type="email" name="email" placeholder="Tu correo electrónico" required>
-                <textarea name="message" rows="6" placeholder="Tu mensaje" required></textarea>
-                
-                <!-- reCAPTCHA -->
-                <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
-        
-                <input type="submit" value="Enviar mensaje">
-            </form>
+            <div class="contact-buttons">
+                <a href="mailto:cristina.recasens13@gmail.com" class="contact-box">
+                    <div class="contact-icon">
+                        <img src="assets/images/mail - blue.svg" alt="Icon mail">
+                    </div>
+                    <div class="contact-text">
+                        <div class="contact-title">Mail</div>
+                        <div class="contact-info">cristina.recasens13@gmail.com</div>
+                    </div>
+                </a>
+
+                <a href="https://www.linkedin.com/in/cristinarecasens-gafas-742882156/" target="_blank" class="contact-box">
+                    <div class="contact-icon">
+                        <img src="assets/images/linkedin - blue.svg" alt="Icon LinkedIn">
+                    </div>
+                    <div class="contact-text">
+                        <div class="contact-title">LinkedIn</div>
+                        <div class="contact-info">Cristina Recasens Gafas</div>
+                    </div>
+                </a>
+
+            </div>
         </section>
-        
     </div>
 
     <!--PIE DE PÁGINA-->
     <footer>
-        <h1>Cristina Recasens</h1>
-        <a href="https://www.linkedin.com/in/cristina-recasens-gafas-742882156/">LinkedIn</a>
+        <h3>Cristina Recasens</h3>
+        <div class="social-buttons">
+                <a href="mailto:cristina.recasens13@gmail.com" class="btn-mail">
+                <img src="assets/images/mail.svg" alt="Mail Icon" />
+                Mail
+                </a>
+                <a href="https://www.linkedin.com/in/cristinarecasens-gafas-742882156/" target="_blank" class="btn-linkedin">
+                    <img src="assets/images/linkedin-app-white-icon.svg" alt="LinkedIn Logo" />
+                    LinkedIn
+                  </a>
+                                <a href="https://github.com/cristinarecasens" target="_blank" class="btn-github">
+                    <img src="assets/images/github-white-icon.svg" alt="GitHub Logo" />
+                    GitHub
+                  </a>
+                
+            </div>
         <p>cristina.recasens13@gmail.com</p> <!-- falta afegir botó github i linkedin-->
         <p>&copy; 2025 Cristina Recasens | Programadora y Bióloga</p> <!-- falta afegir botó github i linkedin-->
     </footer>
