@@ -381,10 +381,6 @@ footer {
         overflow-x: hidden;
     }
 
-    header {
-        box-sizing: border-box;
-    }
-
     header h3 {
         font-size: 1.2em;
         max-width: 90vw;
