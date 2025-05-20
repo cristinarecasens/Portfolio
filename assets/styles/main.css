@@ -10,6 +10,8 @@ body {
 header {
     text-align: center;
     padding: 400px;
+    padding-top: 300px;
+    padding-bottom: 300px;
     background: linear-gradient(135deg, #99b8cd, #99b8cd);
     color: #333;
     border-bottom: 5px solid #99b8cd;
@@ -235,7 +237,6 @@ footer {
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
-    color: white;
     border-radius: 50px; /* Bordes redondeados */
     transition: background-color 0.3s ease;
     text-transform: capitalize;
@@ -245,8 +246,28 @@ footer {
 .btn-github {
     background-color: #333;
     border: 2px solid #333;
+    color: white;
+}
+
+.btn-github a{
+    color:white;
 }
 .btn-github img {
+    width: 25px;  /* Cambia el tamaño de la imagen SVG */
+    height: 25px; /* Cambia el tamaño de la imagen SVG */
+    margin-right: 10px;
+}
+
+.btn-mail {
+    background-color: #e0e0e0;
+    border: 2px solid #e0e0e0;
+    color: black;
+}
+.btn-mail a{
+    color:black;
+}
+
+.btn-mail img {
     width: 25px;  /* Cambia el tamaño de la imagen SVG */
     height: 25px; /* Cambia el tamaño de la imagen SVG */
     margin-right: 10px;
@@ -256,6 +277,11 @@ footer {
 .btn-linkedin {
     background-color: #0077b5;
     border: 2px solid #0077b5;
+    color: white;
+}
+
+.btn-linkedin a{
+    color:white;
 }
 
 .btn-linkedin img {
@@ -282,7 +308,6 @@ footer {
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
-    color: white;
     border-radius: 50px; /* Bordes redondeados */
     transition: background-color 0.3s ease;
     text-transform: capitalize;

@@ -5,56 +5,58 @@
     text-align: center;
 }
 
-
-.contact form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.contact-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px 0;
 }
 
-.contact input, .contact textarea {
-    font-size: 1.2rem; /* Aumenta el tamaño de la fuente */
-    padding: 15px;  /* Aumenta el relleno */
-    margin: 15px 0;
-    width: 100%;
-    max-width: 700px; /* Asegura que el formulario no se haga demasiado ancho */
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+.contact-box {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.3s ease;
 }
 
-.contact textarea {
-    resize: vertical; /* Permite que se ajuste la altura del textarea */
-    height: 150px; /* Aumenta la altura del área de texto */
+@media (max-width: 768px) {
+  .contact-buttons {
+    grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+  }
 }
 
-.contact input[type="submit"] {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 12px 20px;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    width: 100%;
-    max-width: 700px;
+.contact-box:hover {
+  background-color: #d8eaf7;
 }
 
-.contact input[type="submit"]:hover {
-    background-color: #0056b3;
+.contact-icon img {
+  width: 48px;
+  height: 48px;
+  margin-right: 20px;
+  color: #7a9bb8
 }
 
-.contact form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: auto;
+.contact-text {
+  display: flex;
+  flex-direction: column;
 }
 
-.contact input, .contact textarea {
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.contact-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #7a9bb8
+
+}
+
+.contact-info {
+  font-size: 1rem;
+  color: #777777;
 }
