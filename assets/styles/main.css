@@ -377,6 +377,9 @@ footer {
 
 /* Para pantallas muy pequeñas como dispositivos móviles de menos de 375px */
 @media only screen and (max-width: 375px) {
+    body {  
+        overflow-x: hidden;
+    }
 
     header {
         padding: 100%; /* mucho más pequeño */
