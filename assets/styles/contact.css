@@ -66,7 +66,7 @@
   
   }
   .contact-box {
-      width: calc(100% - 20px); /* Ocupa todo el ancho disponible */
+      width: calc(100%); /* Ocupa todo el ancho disponible */
       max-width: 100%; /* Asegura que se adapte correctamente */
       margin-bottom: 10px; /* Elimina los márgenes para que se ajuste bien */
       height: auto; /* Permite que el contenido ajuste su altura */
