@@ -382,7 +382,6 @@ footer {
     }
 
     header {
-        padding: 100%; /* mucho más pequeño */
         box-sizing: border-box;
     }
 
