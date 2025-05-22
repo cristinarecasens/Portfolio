@@ -258,6 +258,8 @@ footer {
     border-radius: 50px; /* Bordes redondeados */
     transition: background-color 0.3s ease;
     text-transform: capitalize;
+    width:150px;
+    margin-bottom:10px;
 }
 
 /* Estilo para el botón de GitHub */
