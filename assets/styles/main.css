@@ -164,7 +164,7 @@ nav .flag-link {
 }
 
 /* Responsive: ocultar menu-content y mostrar botón */
-@media (max-width: 1100px) {
+@media (max-width: 1260px) {
 
     header{
         padding:70px;
@@ -218,7 +218,6 @@ nav .flag-link {
     padding:0px;
 
   }
-
 
 
   h2{
@@ -439,6 +438,16 @@ footer {
         box-sizing: border-box; /* Padding y borde no aumentan el ancho total */
         padding: 10px 20px;    /* Ejemplo, ajustar según diseño */
         overflow-x: hidden;    /* Evita scroll horizontal */
+    }
+
+    .flags {
+        display: flex;
+        justify-content: center; /* Asegura que las banderas se centren en el menú */
+        align-items: center;  /* Alinea las banderas verticalmente */
+        width: 70%;
+        margin: 0 auto;
+        gap: 0.5rem; /* Reducido para acercar las banderas */
+        padding:0px;
     }
 }
 
