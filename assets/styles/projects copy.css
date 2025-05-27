@@ -1,0 +1,93 @@
+/* Contenedor de proyectos */
+.projects {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    gap: 20px; /* Espaciado entre los proyectos */
+}
+
+/* Estilo de cada proyecto */
+.projects-item {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: background-color 0.3s ease; /* Transición para el hover */
+}
+
+/* Efecto hover para los proyectos */
+.projects-item:hover {
+    background-color: rgb(218, 243, 245); /* Color de fondo más suave al pasar el ratón */
+}
+
+/* Para los iconos de los programas utilizados */
+.made-with {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.made-with span {
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+/* Estilo de los iconos */
+.made-with .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+/* Estilo de las imágenes dentro de cada proyecto */
+.projects-item img {
+    max-width: 100%; /* La imagen no puede ser más grande que el contenedor */
+    height: auto; /* Mantiene la proporción original */
+    border-radius: 5px; /* Bordes redondeados para la imagen */
+}
+
+/* Botón Demo */
+.btn-demo {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: #74b9ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover para el botón Demo */
+.btn-demo:hover {
+    background-color: #5fa3e6;
+}
+
+/* Estilo para el SVG dentro del botón */
+.demo-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+/* Estilo para el contenedor de los proyectos */
+.projects-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.project-image {
+    width: 200px;
+    height: auto;
+    margin-left: 20px;
+}

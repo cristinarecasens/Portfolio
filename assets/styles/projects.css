@@ -1,0 +1,139 @@
+.projects {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.projects-item {
+    background-color: white;  /* Fondo blanco */
+    padding: 20px;
+    margin: 20px 0;  /* Espaciado entre los recuadros */
+    border-radius: 10px;  /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+    text-align: left;  /* Alineación del texto a la izquierda */
+}
+
+.projects-item span{
+    color: grey;
+}
+
+.projects-item:hover {
+    
+    background-color: #d8eaf7;  
+}
+
+.projects-buttons {
+    background-color: #83b3e4;
+    border: 2px solid #0077b5;
+}
+
+
+.projects-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.projects-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.btn-demo {
+    display: inline-flex; /* Para colocar el SVG y el texto en una línea */
+    align-items: center; /* Alinea el SVG y el texto verticalmente */
+    padding: 12px 24px; /* Más relleno para hacerlo más grande */
+    background-color: #83b3e4; /* Azul claro de fondo */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Eliminar subrayado en el texto */
+    border-radius: 30px; /* Bordes más redondeados */
+    font-size: 16px; /* Tamaño de la fuente */
+    transition: background-color 0.3s ease; /* Solo la transición del color de fondo */
+}
+
+/* Efecto hover */
+.btn-demo:hover {
+    background-color: #5f92c4; /* Azul un poco más oscuro al pasar el ratón */
+}
+
+.btn-git {
+    display: inline-flex; /* Para colocar el SVG y el texto en una línea */
+    align-items: center; /* Alinea el SVG y el texto verticalmente */
+    padding: 12px 24px; /* Más relleno para hacerlo más grande */
+    background-color: #999999; /* Azul claro de fondo */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Eliminar subrayado en el texto */
+    border-radius: 30px; /* Bordes más redondeados */
+    font-size: 16px; /* Tamaño de la fuente */
+    transition: background-color 0.3s ease; /* Solo la transición del color de fondo */
+}
+
+/* Efecto hover */
+.btn-git:hover {
+    background-color: #7a7a7a; /* Azul un poco más oscuro al pasar el ratón */
+}
+
+/* Estilo para el SVG dentro del botón */
+.demo-icon {
+    width: 24px; /* Ajusta el tamaño del SVG */
+    height: 24px; /* Ajusta el tamaño del SVG */
+    margin-right: 8px; /* Espacio entre el SVG y el texto */
+}
+
+.made-with {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.made-with span {
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+/* Estilos para los iconos */
+.made-with .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+
+}
+
+.projects-content {
+    display: flex; /* Utilizamos flexbox para alinear la imagen y el texto */
+    justify-content: space-between; /* Asegura que la imagen esté a la derecha */
+    align-items: center; /* Centra el contenido verticalmente */
+    margin-top: 20px; /* Espacio entre el texto y la foto */
+}
+
+/* Estilo para la imagen del proyecto */
+.project-image {
+    width: 500px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-left: 20px; /* Añade un espacio entre el texto y la imagen */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .projects-content {
+        flex-direction: column;  /* Cambiar la dirección a columna para pantallas pequeñas */
+        text-align: center;  /* Centrar el texto y la imagen */
+    }
+
+    .project-image {
+        width: 80%;  /* La imagen ocupará el 80% del contenedor */
+        margin-left: 0;  /* Eliminar margen cuando se apilen */
+        margin: 20px;  /* Espacio entre el texto y la imagen */
+    }
+    
+    .projects-item {
+        text-align: center; /* Asegura que el texto esté centrado también en pantallas pequeñas */
+    }
+
+    .projects-buttons {
+        margin: 10px auto; /* Centra los botones horizontalmente */
+        display: inline-block; /* Cambia a bloque en línea para que se centre */
+    }
+}

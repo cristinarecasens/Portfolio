@@ -1,0 +1,483 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+header {
+    text-align: center;
+    padding: 400px;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    background: linear-gradient(135deg, #99b8cd, #99b8cd);
+    color: #333;
+    border-bottom: 5px solid #99b8cd;
+}
+
+header h1{
+    font-family: "Consolas";
+    font-size: 80px;
+}
+
+header p{
+    color: white;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.typewriter {
+    font-family:"Courier New";
+    display: inline-block;             /* Necesario para animar el ancho */
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid white;    /* Cursor */
+    animation: typing 8s steps(39, end) forwards,
+    blink 0.7s step-end infinite;
+    animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+  0% { width: 0; }
+  37.5% { width: 39ch; }   /* escribir en 3s */
+  87.5% { width: 39ch; }   /* quedarse 4s */
+  100% { width: 0; }       /* borrar en 1s */
+}
+
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.content-wrapper {
+    max-width: 900px; /* Establece el ancho máximo */
+    margin: 0 auto;   /* Centra el contenido */
+    padding: 0px;
+}
+
+nav {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 10px 40px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    width: 80%;
+    max-width: 1000px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 400;
+    text-align: center;
+    min-width: 125px;
+    display: inline-block;
+    transition: background 0.3s, color 0.3s;
+}
+
+
+nav a:hover {
+    font-weight: bold; /* o usar transform: scale(...) si prefieres */
+}
+
+nav a.active {
+    background-color: #c4d6e2;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* Contenedor de las banderas */
+nav .flags {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end; /* Alinea las banderas a la derecha */
+    margin-left:40px;
+    justify-content: center;
+}
+
+
+/* Estilo para las banderas */
+nav .flag {
+    width: 25px; /* Aumentamos el tamaño de las banderas */
+    height: 25px;
+    border-radius: 50%; /* Hace las banderas circulares */
+    background-size: cover; /* Asegura que la imagen se ajuste al tamaño del contenedor */
+    background-position: center; /* Centra la imagen dentro del contenedor */
+    opacity: 40%;
+
+}
+
+nav .flag.selected {
+    opacity: 90%; /* 100% de opacidad para la bandera seleccionada */
+}
+
+nav .flag-link {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    display: inline-flex; /* Usamos inline-flex para que se ajuste mejor al tamaño de la imagen */
+    align-items: center; /* Alineamos la imagen dentro del enlace */
+    justify-content: center; /* Alineamos la imagen dentro del enlace */
+    margin: 0; /* Eliminamos cualquier margen por defecto */
+    padding: 0; /* Eliminamos cualquier padding por defecto */
+    min-width: 0px;
+}
+
+/* Botón hamburguesa oculto por defecto */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  border-radius: 2px;
+}
+
+/* NUEVO: Estilo por defecto en escritorio */
+.menu-content {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+/* Responsive: ocultar menu-content y mostrar botón */
+@media (max-width: 1260px) {
+
+    header{
+        padding:70px;
+        padding-bottom: 100px;
+    }
+
+    header h1{
+        font-size:65px !important;
+        margin-bottom: 10px;
+    }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .menu-toggle {
+    display: flex;
+    justify-content: center; /* Centra los tres puntos */
+    align-items: center; /* Alinea verticalmente */
+    width: 100%; /* Hace que ocupe toda la barra */
+  }
+
+  /* Estilo vertical para móvil */
+  .menu-content {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav.show .menu-content {
+    display: flex;
+  }
+
+  .menu-content a {
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .flags {
+    display: flex;
+    justify-content: center; /* Asegura que las banderas se centren en el menú */
+    align-items: center;  /* Alinea las banderas verticalmente */
+    width: 100%;
+    margin-top: 15px;
+    gap: 0px; /* Reducido para acercar las banderas */
+    padding:0px;
+
+  }
+
+
+  h2{
+    font-size: 50px !important;
+  }
+  
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #7a9bb8;
+    color: white;
+}
+
+.social-buttons {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+.social-buttons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 30px;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50px; /* Bordes redondeados */
+    transition: background-color 0.3s ease;
+    text-transform: capitalize;
+    width:150px;
+    margin-bottom:10px;
+}
+
+/* Estilo para el botón de GitHub */
+.btn-github {
+    background-color: #333;
+    border: 2px solid #333;
+    color: white;
+}
+
+.btn-github a{
+    color:white;
+}
+.btn-github img {
+    width: 25px;  /* Cambia el tamaño de la imagen SVG */
+    height: 25px; /* Cambia el tamaño de la imagen SVG */
+    margin-right: 10px;
+}
+
+.btn-mail {
+    background-color: #e0e0e0;
+    border: 2px solid #e0e0e0;
+    color: black;
+}
+.btn-mail a{
+    color:black;
+}
+
+.btn-mail img {
+    width: 25px;  /* Cambia el tamaño de la imagen SVG */
+    height: 25px; /* Cambia el tamaño de la imagen SVG */
+    margin-right: 10px;
+}
+
+/* Estilo para el botón de LinkedIn */
+.btn-linkedin {
+    background-color: #0077b5;
+    border: 2px solid #0077b5;
+    color: white;
+}
+
+.btn-linkedin a{
+    color:white;
+}
+
+.btn-linkedin img {
+    width: 25px;  /* Cambia el tamaño de la imagen SVG */
+    height: 25px; /* Cambia el tamaño de la imagen SVG */
+    margin-right: 10px;
+}
+
+.social-buttons a:hover {
+    opacity: 0.8;
+}
+
+/* Estilo para los íconos dentro de los botones */
+.social-buttons i {
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
+
+.g-recaptcha {
+    margin: 20px 0;
+    transform: scale(0.85); /* Ajusta el tamaño del reCAPTCHA */
+    transform-origin: 0 0;
+    max-width: 700px; /* Asegura que el captcha no sea más ancho que el formulario */
+    width: 100%;
+}
+
+/* PI: Reglas para hacer el diseño responsive */
+@media only screen and (max-width: 768px) {
+
+
+    header{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;   /* Centra verticalmente si hay altura disponible */
+        width: 100%;
+        height: 80vh;             /* O el alto que necesites */
+        padding: 0;                /* Asegúrate de que no haya padding que lo desplace */
+        box-sizing: border-box;    /* Asegura que padding no aumente el tamaño */
+    }
+    
+    /* Ajustes para la imagen de "Sobre mi" */
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image img {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .about-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    /* Proyectos */
+    .projects-item {
+        padding: 10px;
+    }
+
+    .projects-content img {
+        width: 100%;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.9em;
+    }
+
+    /* Ajuste de texto para más claridad en móviles */
+    header h1 {
+        font-size: 2em;
+    }
+
+    header h3 {
+        font-size: 1em;
+    }
+
+    section h2 {
+        font-size: 40px;
+    }
+    
+    .social-buttons a{
+        margin: 5px;
+    }
+
+}
+
+/* Para pantallas muy pequeñas como dispositivos móviles de menos de 375px */
+@media only screen and (max-width: 375px) {
+    body {  
+        overflow-x: hidden;
+    }
+
+    header{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;   /* Centra verticalmente si hay altura disponible */
+        width: 100%;
+        height: 80vh;             /* O el alto que necesites */
+        padding: 0;                /* Asegúrate de que no haya padding que lo desplace */
+        box-sizing: border-box;    /* Asegura que padding no aumente el tamaño */
+    }
+
+
+
+    header h3 {
+        max-width: 90vw;
+        margin: 0 auto;
+        overflow-wrap: break-word; /* para que el texto se parta si es muy largo */
+        box-sizing: border-box;
+        font-size: 3.5vw;
+    }
+    
+    
+    /* Reducción de márgenes y espaciado para pantallas pequeñas */
+    .content-wrapper {
+        padding: 0px;
+    }
+
+    nav a {
+        font-size: 0.9em;
+    }
+
+    section h2 {
+        font-size: 40px;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+
+    .btn-demo {
+        font-size: 0.9em;
+    }
+
+    .social-buttons a{
+        margin: 5px;
+    }
+
+    .menu-toggle {
+        width: 100vw;          /* 100% del viewport width */
+        max-width: 100%;       /* Nunca más ancho que el contenedor padre */
+        box-sizing: border-box; /* Padding y borde no aumentan el ancho total */
+        padding: 10px 20px;    /* Ejemplo, ajustar según diseño */
+        overflow-x: hidden;    /* Evita scroll horizontal */
+    }
+
+    .flags {
+        display: flex;
+        justify-content: center; /* Asegura que las banderas se centren en el menú */
+        align-items: center;  /* Alinea las banderas verticalmente */
+        width: 70%;
+        margin: 0 auto;
+        gap: 0.5rem; /* Reducido para acercar las banderas */
+        padding:0px;
+    }
+}
+
+@media only screen and (max-width: 322px) {
+    h2 {
+        font-size:30px !important;
+    }
+}
+
+h2 {
+    font-family: 'Courier New';
+    font-size: 60px;
+    color:#99b8cd;
+}
+
+p {
+    line-height: 1.6; /* Puedes ajustar el valor según tus necesidades */
+    font-family: 'Roboto';
+    
+}
+

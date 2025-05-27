@@ -1,0 +1,43 @@
+.experience {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.experience-item {
+    background-color: white;  /* Fondo blanco */
+    padding: 20px;
+    margin: 20px 0;  /* Espaciado entre los recuadros */
+    border-radius: 10px;  /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+    text-align: left;  /* Alineación del texto a la izquierda */
+}
+
+.experience-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.experience-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Media query para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .experience-item {
+        flex-direction: column;  /* Cambiar la dirección a columna cuando la pantalla es pequeña */
+        text-align: center;  /* Centrar el texto */
+    }
+
+    .experience-item img {
+        width: 80%;  /* Ajustar el tamaño de la imagen para que se vea bien en pantallas pequeñas */
+        margin-left: 0;  /* Eliminar el margen izquierdo cuando estén apilados */
+        margin-top: 15px;  /* Espacio entre el texto y la imagen */
+    }
+
+    .experience-item h3, .experience-item p {
+        max-width: 100%;  /* Deja que el texto ocupe todo el ancho disponible */
+    }
+}

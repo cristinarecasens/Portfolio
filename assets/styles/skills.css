@@ -1,0 +1,35 @@
+.skills-icons {
+    max-width: 900px;
+    width: 100%; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    box-sizing: border-box;  
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column; /* Asegura que el texto esté debajo de la imagen */
+    align-items: center;  /* Centra el contenido */
+    text-align: center;
+}
+
+.skills-icons img {
+    width: 90px;
+    height: 90px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skills-icons img:hover {
+    transform: scale(1.3);
+}
+
+.skill p {
+    margin-top: 10px; /* Espaciado entre imagen y texto */
+    font-size: 16px;
+    
+}

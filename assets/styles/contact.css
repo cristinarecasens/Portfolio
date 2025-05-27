@@ -1,0 +1,90 @@
+.contact {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.contact-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.contact-box {
+  display: flex;
+  align-items: center;  /* Alinea los iconos verticalmente */
+  justify-content: flex-start;  /* Asegura que los iconos estén alineados a la izquierda */
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.3s ease;
+  text-align: left;  /* Asegura que el texto esté alineado a la izquierda */
+}
+
+.contact-box:hover {
+  background-color: #d8eaf7;
+}
+
+.contact-icon {
+  display: flex;
+  justify-content: center; /* Centra los iconos */
+  align-items: center;     /* Alinea verticalmente los iconos */
+  margin-right: 20px;      /* Espacio entre iconos y texto */
+}
+
+.contact-icon img {
+  width: 48px;
+  height: 48px;
+  color: #7a9bb8;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra el texto verticalmente dentro de la columna */
+  text-align: center; /* Alinea el texto horizontalmente en el centro */
+  flex-grow: 1; /* Asegura que el texto ocupe el espacio restante */
+}
+
+.contact-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #7a9bb8;
+}
+
+.contact-info {
+  font-size: 1rem;
+  color: #777777;
+}
+
+@media (max-width: 768px) {
+  .contact-buttons {
+    grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    max-width: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  .contact-box {
+    width: 100%;  /* Ocupa todo el ancho disponible */
+    max-width: 100%;
+    margin-bottom: 10px;
+    height: auto;
+    padding: 15px;
+  }
+
+  .contact-info {
+    font-size: 12px !important;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+}

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristina Recasens</title>
+
+    <link rel="stylesheet" href="assets/styles/about.css">
+    <link rel="stylesheet" href="assets/styles/projects.css">
+    <link rel="stylesheet" href="assets/styles/experience.css">
+    <link rel="stylesheet" href="assets/styles/education.css">
+    <link rel="stylesheet" href="assets/styles/contact.css">
+    <link rel="stylesheet" href="assets/styles/skills.css">    
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <script src="script.js"></script> 
+</head>
+<body>            
+    <header id="inici">
+        <p>Welcome to my Portfolio!</p>
+        <h1>Cristina Recasens</h1>
+        <h3 class="typewriter">Programming and Databases | Biologist</h3>
+        <div class="social-buttons">
+            <a href="https://github.com/cristinarecasens" target="_blank" class="btn-github">
+                <img src="assets/images/github-white-icon.svg" alt="GitHub Logo" />
+                GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/cristina-recasens-gafas-742882156/" target="_blank" class="btn-linkedin">
+                <img src="assets/images/linkedin-app-white-icon.svg" alt="LinkedIn Logo" />
+                LinkedIn
+            </a>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <nav>
+        <!-- Botón hamburguesa -->
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <!-- Contenedor para todo el contenido que se oculta en responsive -->
+        <div class="menu-content">
+                <a href="#inici" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About me</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+
+            <div class="flags">
+            <a href="index.html" class="flag-link">
+                <img src="assets/images/catalan-flag.png" alt="Catalan Flag" class="flag" />
+            </a>
+            <a href="es.html" class="flag-link">
+                <img src="assets/images/spanish-flag.png" alt="Spanish Flag" class="flag" />
+            </a>
+            <a href="en.html" class="flag-link">
+                <img src="assets/images/english-flag.png" alt="English Flag" class="flag selected" />
+            </a>
+            </div>
+        </div>
+        </nav>
+
+        <!--SOBRE MI-->
+        <section id="about" class="about">
+            <h2>Sobre mi</h2>
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="assets/images/foto.jpg" alt="Foto">
+                </div>
+                <div class="about-text">
+                    <p>Hello, I’m Cristina Recasens. I have a Certificate of Higher Education (HNC) in Cross-platform Application Development and work as an app developer and data analyst. I’m also a biologist with a Master’s in Terrestrial Ecology and Biodiversity Management, where I learned statistics and modeling using R and QGiS (UAB).</p>
+                    <p>I have always been passionate about science, mathematics, and computer science, which has shaped my interdisciplinary profile. I love seeing an idea come to life on the screen and discovering unexpected connections between data.</p>
+                    <p>I have one year of experience with Python and solid knowledge of Java and SQL. I enjoy challenges and constant learning, and I adapt quickly!</p>
+                    <p>Think I’m a good fit? Let’s talk!</p>
+                </div>
+            </div>
+        </section>
+
+        <!--PROYECTOS-->
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="projects-item">
+                <h3>BestBefore Application</h3>
+                <h4>Application Development</h4>
+                <div class="made-with">
+                    <span>Made with:</span>
+                    <img src="assets/images/python-logo.png" alt="Python" class="icon" />
+                    <img src="assets/images/streamlit-logo.png" alt="Streamlit" class="icon" />
+                    <img src="assets/images/matplotlib-logo.png" alt="Matplotlib" class="icon" />
+                    <img src="assets/images/pandas-logo.png" alt="Pandas" class="icon" />
+                    <img src="assets/images/numpy-logo.png" alt="Numpy" class="icon" />
+                </div>
+                <div class="projects-content">
+                    <p>Developer of an application for IRTA (Institute of Agrifood Research) where through a series of questions, user data input, and subsequent statistical analysis, it is possible to make an approximate adjustment of food expiration dates.</p>
+                    <img src="assets/images/best_before.png" alt="Best before" class="project-image" />
+                </div>
+                <a href="https://bestbefore-jvyyfg9a6jd9vbkjvvsyxx.streamlit.app/" target="_blank" class="btn-demo">
+                    <img src="assets/images/play.svg" alt="Demo Icon" class="demo-icon" />
+                    Demo
+                </a>
+            </div>
+            <div class="projects-item">
+                <h3>Mobile Game CloudyPlane</h3>
+                <h4>Application Development</h4>
+                <div class="made-with">
+                    <span>Made with:</span>
+                    <img src="assets/images/Csharp-logo.png" alt="C#" class="icon" />
+                    <img src="assets/images/unity-logo.png" alt="Unity" class="icon" />
+                </div>
+                <div class="projects-content">
+                    <p>Simple game inspired by FlappyBirds that consists of collecting white clouds and avoiding storms. How many points can you score? You have the apk and the code available on my GitHub.</p>
+                    <img src="assets/images/cloudy-plane.png" alt="CloudyPlane" class="project-image" />
+                </div>
+                <a href="https://github.com/cristinarecasens/CloudyPlane" target="_blank" class="btn-git">
+                    <img src="assets/images/github-white-icon.svg" alt="GitHub" class="demo-icon" />
+                    GitHub
+                </a>
+            </div>
+            <div class="projects-item">
+                <h3>Master's Final Project</h3>
+                <h4>Data Design and Analysis</h4>
+                <div class="made-with">
+                    <span>Made with:</span>
+                    <img src="assets/images/R-logo.png" alt="R" class="icon" />
+                    <img src="assets/images/Qgis-logo.png" alt="QGIS" class="icon" />
+                </div>
+                <div class="projects-content">
+                    <p>Statistical data analysis using QGiS and R to determine population dynamics of wild boar in Collserola and the city of Barcelona.</p>
+                    <img src="assets/images/grafic-master.png" alt="Master Graphic" class="project-image" />
+                </div>
+                <a href="https://ddd.uab.cat/pub/trerecpro/2017/hdl_2072_351532/TFM_CristinaRecasensGafas.pdf" target="_blank" class="btn-demo">
+                    <img src="assets/images/play.svg" alt="Demo Icon" class="demo-icon" />
+                    Docs
+                </a>
+            </div>
+
+
+        </section>
+
+        <!--SKILLS-->
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <div class="skills-icons">            
+                <div class="skill">
+                    <img src="assets/images/python-logo.png" alt="Python">
+                    <p>Python</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/images/java-logo.png" alt="Java">
+                    <p>Java</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/images/javafx-logo.png" alt="JavaFX">
+                    <p>JavaFX</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/images/mysql-logo.webp" alt="MySQL">
+                    <p>MySQL</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/images/postgres-logo.png" alt="Postgres">
+                    <p>Postgres</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/images/kotlin-logo.png" alt="Kotlin">
+                    <p>Kotlin</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/images/android-studio-logo.png" alt="Android Studio">
+                    <p>Android Studio</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/images/html-logo.png" alt="HTML5">
+                    <p>HTML5</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/images/css-logo.webp" alt="CSS">
+                    <p>CSS</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/images/R-logo.png" alt="R">
+                    <p>R</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/images/Qgis-logo.png" alt="QGIS">
+                    <p>QGIS</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/images/matplotlib-logo.png" alt="Matplotlib">
+                    <p>Matplotlib</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/images/numpy-logo.png" alt="NumPy">
+                    <p>NumPy</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/images/pandas-logo.png" alt="Pandas">
+                    <p>Pandas</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/images/streamlit-logo.png" alt="Streamlit">
+                    <p>Streamlit</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/images/office-logo.png" alt="Office">
+                    <p>Office</p>
+                </div>
+            </div>
+        </section>
+
+        <!--EDUCACIÓN-->
+        <section id="education" class="education">
+            <h2>Education</h2>
+            <div class="education-container">
+                <div class="education-item">
+                    <h3>Multiplatform Application Development</h3>
+                    <p>September 2023 - June 2025</p>
+                    <h4>INS Palamós</h4>
+                    <p>Higher Vocational Training in Multiplatform Application Development at the Palamós Institute. I have learned application development with Java, Python, and Kotlin, as well as database languages such as MySQL and PostgreSQL.</p>
+                    <img src="assets/images/logo-institut-palamos.png" alt="INS Palamós">
+                </div>
+
+                <div class="education-item">
+                    <h3>Master’s in Terrestrial Ecology and Biodiversity Management</h3>
+                    <p>September 2016 - September 2017</p>
+                    <h4>Autonomous University of Barcelona</h4>
+                    <p>Master’s degree focused on statistical studies and modeling applied to biodiversity management. Thanks to this master’s, I acquired a solid foundation in statistics and modeling through the application of various models and tools (such as R and QGIS).</p>
+                    <img src="assets/images/Logo_uab.png" alt="UAB">
+                </div>
+
+                <div class="education-item">
+                    <h3>Bachelor’s Degree in General Biology</h3>
+                    <p>September 2011 - June 2015</p>
+                    <h4>Autonomous University of Barcelona</h4>
+                    <p>University degree in General Biology, which provided me with broad knowledge on various topics related to life and science, including studies in bioinformatics, statistics, and mathematics.</p>
+                    <img src="assets/images/Logo_uab.png" alt="UAB">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <div class="contact-buttons">
+                <a href="mailto:cristina.recasens13@gmail.com" class="contact-box">
+                    <div class="contact-icon">
+                        <img src="assets/images/mail - blue.svg" alt="Icon mail">
+                    </div>
+                    <div class="contact-text">
+                        <div class="contact-title">Mail</div>
+                        <div class="contact-info">cristina.recasens13@gmail.com</div>
+                    </div>
+                </a>
+
+                <a href="https://www.linkedin.com/in/cristina-recasens-gafas-742882156/" target="_blank" class="contact-box">
+                    <div class="contact-icon">
+                        <img src="assets/images/linkedin - blue.svg" alt="Icon LinkedIn">
+                    </div>
+                    <div class="contact-text">
+                        <div class="contact-title">LinkedIn</div>
+                        <div class="contact-info">Cristina Recasens Gafas</div>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+    </div>
+
+    <!--PIE DE PÁGINA-->
+    <footer>
+        <h3>Cristina Recasens</h3>
+        <div class="social-buttons">
+                <a href="mailto:cristina.recasens13@gmail.com" class="btn-mail">
+                <img src="assets/images/mail.svg" alt="Mail Icon" />
+                Mail
+                </a>
+                <a href="https://www.linkedin.com/in/cristina-recasens-gafas-742882156/" target="_blank" class="btn-linkedin">
+                    <img src="assets/images/linkedin-app-white-icon.svg" alt="LinkedIn Logo" />
+                    LinkedIn
+                  </a>
+                <a href="https://github.com/cristinarecasens" target="_blank" class="btn-github">
+                    <img src="assets/images/github-white-icon.svg" alt="GitHub Logo" />
+                    GitHub
+                </a>
+                
+            </div>
+        <p>cristina.recasens13@gmail.com</p> <!-- falta afegir botó github i linkedin-->
+        <p>&copy; 2025 Cristina Recasens | Programmer and Biologist</p> <!-- falta afegir botó github i linkedin-->
+    </footer>
+
+</body>
+</html>
