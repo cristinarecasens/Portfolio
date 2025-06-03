@@ -23,7 +23,7 @@
     text-align: center;          /* Alineación de texto en el centro */
     width: calc(33% - 20px);      /* Ancho de los elementos, ajustado para tres elementos por fila */
     max-width: 30%;              /* Asegura que no se expanda demasiado */
-    height: 720px;               /* Altura fija para cada item */
+    height: 740px;               /* Altura fija para cada item */
     box-sizing: border-box;      /* Asegura que el padding y el border no aumenten el tamaño total del elemento */
 }
 
@@ -55,6 +55,17 @@
     height: auto;                /* Mantiene la relación de aspecto */
     margin-top: 10px;            /* Añade algo de espacio arriba de la imagen */
     flex-grow: 0;                /* La imagen no se expande más allá de su tamaño natural */
+}
+
+@media screen and (max-width: 100px) {
+    
+
+    .education-item {
+       
+        height: auto; /* Permite que el contenido ajuste su altura */
+        
+    }
+
 }
 
 @media screen and (max-width: 768px) {
