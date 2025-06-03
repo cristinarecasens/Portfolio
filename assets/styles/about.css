@@ -29,6 +29,7 @@
     width: 250px;  
     height: 400px;  
     overflow: hidden; 
+    border-radius: 15px;
 }
 
 .about-image img {

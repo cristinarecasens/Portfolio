@@ -20,6 +20,7 @@
     color: grey;
 }
 
+
 .projects-item:hover {
     
     background-color: #d8eaf7;  
@@ -120,6 +121,7 @@
     width: 500px; /* Ajusta el tamaño de la imagen */
     height: auto; /* Mantiene la proporción de la imagen */
     margin-left: 20px; /* Añade un espacio entre el texto y la imagen */
+    border-radius: 15px;
 }
 
 /* Media query para pantallas pequeñas */

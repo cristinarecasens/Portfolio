@@ -29,6 +29,7 @@ header {
 header h1{
     font-family: "Courier New";
     font-size: 80px;
+    font-weight: bold;
 }
 
 header p{
@@ -43,15 +44,15 @@ header p{
     overflow: hidden;
     white-space: nowrap;
     border-right: 2px solid white;    /* Cursor */
-    animation: typing 8s steps(39, end) forwards,
+    animation: typing 8s steps(42, end) forwards,
     blink 0.7s step-end infinite;
     animation-iteration-count: infinite;
 }
 
 @keyframes typing {
   0% { width: 0; }
-  37.5% { width: 39ch; }   /* escribir en 3s */
-  87.5% { width: 39ch; }   /* quedarse 4s */
+  37.5% { width: 42ch; }   /* escribir en 3s */
+  87.5% { width: 42ch; }   /* quedarse 4s */
   100% { width: 0; }       /* borrar en 1s */
 }
 
