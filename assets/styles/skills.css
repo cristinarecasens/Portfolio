@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 .skills-icons {
     max-width: 900px;
     width: 100%; 
@@ -29,6 +31,7 @@
 }
 
 .skill p {
+    font-family: 'Montserrat', sans-serif;
     margin-top: 10px; /* Espaciado entre imagen y texto */
     font-size: 16px;
     

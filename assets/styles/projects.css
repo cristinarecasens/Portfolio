@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 .projects {
     padding: 60px 20px;
     max-width: 1200px;
@@ -35,8 +37,13 @@
 }
 
 .projects-item p {
+    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     color: #555;
+}
+
+.projects-item h4{
+    color: #7a9bb8;
 }
 
 .btn-demo {
