@@ -58,14 +58,9 @@
 }
 
 @media screen and (max-width: 100px) {
-    
-
     .education-item {
-       
         height: auto; /* Permite que el contenido ajuste su altura */
-        
     }
-
 }
 
 @media screen and (max-width: 768px) {

@@ -163,7 +163,7 @@ nav .flag-link {
 /* NUEVO: Estilo por defecto en escritorio */
 .menu-content {
   display: flex;
-  gap: 15px;
+  gap: 10px;
   align-items: center;
 }
 
