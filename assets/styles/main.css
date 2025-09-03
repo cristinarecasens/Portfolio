@@ -17,10 +17,13 @@ body {
 
 
 header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
     text-align: center;
-    padding: 400px;
-    padding-top: 300px;
-    padding-bottom: 300px;
     background: linear-gradient(135deg, #99b8cd, #99b8cd);
     color: #333;
     border-bottom: 5px solid #99b8cd;
@@ -484,4 +487,5 @@ p {
     font-family: 'Roboto';
     
 }
+
 
