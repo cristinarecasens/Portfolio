@@ -24,25 +24,26 @@ header {
     width: 100%;
     height: 80vh;
     text-align: center;
-    background: linear-gradient(135deg, #99b8cd, #99b8cd);
+    background:  #9bbcd4;
     color: #333;
-    border-bottom: 5px solid #99b8cd;
+    border-bottom: 5px solid #9bbcd4;
 }
 
 header h1{
-    font-family: "Courier New";
+    font-family: "Courier New", sans-serif;
     font-size: 80px;
     font-weight: bold;
 }
 
 header p{
-    color: white;
+    color: rgb(51, 51, 51);
     font-size: 20px;
     margin-top: 0px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .typewriter {
-    font-family:"Courier New";
+    font-family:"Courier New", sans-serif;
     display: inline-block;             /* Necesario para animar el ancho */
     overflow: hidden;
     white-space: nowrap;
@@ -106,8 +107,8 @@ nav a:hover {
 }
 
 nav a.active {
-    background-color: #c4d6e2;
-    color: white;
+    background-color: #d8eaf7;
+    color: rgb(0, 0, 0);
     font-weight: bold;
 }
 
@@ -243,8 +244,12 @@ section {
 footer {
     text-align: center;
     padding: 20px;
-    background: #7a9bb8;
-    color: white;
+    background: #9bbcd4;
+    color: rgb(0, 0, 0);
+}
+
+footer p{
+    font-family: Montserrat, sans-serif;
 }
 
 .social-buttons {
@@ -266,6 +271,8 @@ footer {
     text-transform: capitalize;
     width:150px;
     margin-bottom:10px;
+    border-color:white;
+    
 }
 
 /* Estilo para el botón de GitHub */
@@ -289,9 +296,7 @@ footer {
     border: 2px solid #e0e0e0;
     color: black;
 }
-.btn-mail a{
-    color:black;
-}
+
 
 .btn-mail img {
     width: 25px;  /* Cambia el tamaño de la imagen SVG */
@@ -301,8 +306,8 @@ footer {
 
 /* Estilo para el botón de LinkedIn */
 .btn-linkedin {
-    background-color: #0077b5;
-    border: 2px solid #0077b5;
+    background-color: #547e9b;
+    border: 2px solid #547e9b;
     color: white;
 }
 
@@ -318,6 +323,16 @@ footer {
 
 .social-buttons a:hover {
     opacity: 0.8;
+    color:white;
+}
+
+.social-buttons a:hover {
+    opacity: 0.8;
+    color:white;
+}
+
+.social-buttons .btn-mail:hover {
+  color: black;
 }
 
 /* Estilo para los íconos dentro de los botones */
@@ -332,6 +347,18 @@ footer {
     transform-origin: 0 0;
     max-width: 700px; /* Asegura que el captcha no sea más ancho que el formulario */
     width: 100%;
+}
+
+h2 {
+    font-family: 'Courier New', sans-serif;
+    font-size: 60px;
+    color:#547e9b;
+}
+
+p {
+    line-height: 1.6; /* Puedes ajustar el valor según tus necesidades */
+    font-family: 'Roboto';
+    
 }
 
 /* PI: Reglas para hacer el diseño responsive */
@@ -476,17 +503,7 @@ footer {
     }
 }
 
-h2 {
-    font-family: 'Courier New';
-    font-size: 60px;
-    color:#99b8cd;
-}
 
-p {
-    line-height: 1.6; /* Puedes ajustar el valor según tus necesidades */
-    font-family: 'Roboto';
-    
-}
 
 
 
