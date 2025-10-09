@@ -10,15 +10,14 @@
     margin: 0 auto; /* Centra el contenedor horizontalmente */
 }
 
-.education-item {
-    display: flex;               /* Establece el contenedor como un flexbox */
+.education-item {             
     flex-direction: column;      /* Apila los elementos en columna (de arriba a abajo) */
-    justify-content: space-between;  /* Asegura que los elementos internos se distribuyan a lo largo de la altura fija */
+    justify-content: flex-start;
     align-items: center;         /* Centra los elementos horizontalmente */
     background-color: white;     /* Fondo blanco */
     padding: 20px;
     margin: 10px;                /* Añade margen lateral para separarlos */
-    border-radius: 10px;         /* Bordes redondeados */
+    border-radius: 15px;         /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave */
     text-align: center;          /* Alineación de texto en el centro */
     width: calc(33% - 20px);      /* Ancho de los elementos, ajustado para tres elementos por fila */
@@ -32,9 +31,8 @@
 }
 
 .education-item h3 {
-    
+    color: #353535;
     font-size: 1.5rem;
-    margin-bottom: 10px;
     flex-grow: 0;                /* No deja que el título crezca */
 }
 
@@ -52,10 +50,48 @@
 
 .education-item img {
     width: 80%;                 /* Asegura que la imagen ocupe el 80% del espacio disponible */
-    height: auto;                /* Mantiene la relación de aspecto */
-    margin-top: 10px;            /* Añade algo de espacio arriba de la imagen */
-    flex-grow: 0;                /* La imagen no se expande más allá de su tamaño natural */
+    height: auto;                /* Mantiene la relación de aspecto */      
 }
+
+.titol-formacio{
+    height: 150px;
+    align-items: center;      /* Centrado vertical */
+    justify-content: center;  /* Centrado horizontal */
+    display: flex;     /* Centra verticalmente */
+    padding: 0;            /* opcional, para dar espacio lateral */
+}
+
+.data-formacio{
+    height: 70px;
+    padding: 0;
+    align-items: center; 
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.escola-formacio{
+    height: 50px;
+    margin:0;
+    align-items: center; 
+    justify-content: center;
+}
+
+.descripcio-formacio {
+    align-items: center;      /* Centrado vertical */
+    justify-content: center;  /* Centrado horizontal */
+    height: 320px;            /* o la altura que necesites */
+    margin: 0;
+    padding: 0 10px;
+}
+
+.image-formacio {
+    display: flex;           /* Necesario para flexbox */
+    align-items: flex-end;   /* Alinea la imagen al fondo */
+    justify-content: center; /* Centra horizontalmente la imagen */
+    height: 110px;           /* altura fija */
+}
+
+
 
 @media screen and (max-width: 100px) {
     .education-item {

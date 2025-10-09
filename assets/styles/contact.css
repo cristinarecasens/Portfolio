@@ -21,7 +21,7 @@
   align-items: center;  /* Alinea los iconos verticalmente */
   justify-content: flex-start;  /* Asegura que los iconos estén alineados a la izquierda */
   background-color: white;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 20px 30px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-decoration: none;

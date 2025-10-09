@@ -10,8 +10,8 @@
 .projects-item {
     background-color: white;  /* Fondo blanco */
     padding: 20px;
-    margin: 20px 0;  /* Espaciado entre los recuadros */
-    border-radius: 10px;  /* Bordes redondeados */
+    margin: 40px 0;  /* Espaciado entre los recuadros */
+    border-radius: 15px;  /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave */
     text-align: left;  /* Alineación del texto a la izquierda */
 }
@@ -34,6 +34,7 @@
 .projects-item h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
+    color:#353535;
 }
 
 .projects-item p {
@@ -53,9 +54,10 @@
     background-color: #6293c4; /* Azul claro de fondo */
     color: white; /* Color del texto */
     text-decoration: none; /* Eliminar subrayado en el texto */
-    border-radius: 30px; /* Bordes más redondeados */
+    border-radius: 50px; /* Bordes más redondeados */
     font-size: 16px; /* Tamaño de la fuente */
     transition: background-color 0.3s ease; /* Solo la transición del color de fondo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Efecto hover */
@@ -71,9 +73,10 @@
     background-color: #999999; /* Azul claro de fondo */
     color: white; /* Color del texto */
     text-decoration: none; /* Eliminar subrayado en el texto */
-    border-radius: 30px; /* Bordes más redondeados */
+    border-radius: 50px; /* Bordes más redondeados */
     font-size: 16px; /* Tamaño de la fuente */
     transition: background-color 0.3s ease; /* Solo la transición del color de fondo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Efecto hover */

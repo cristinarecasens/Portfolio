@@ -11,7 +11,7 @@
     background-color: white;  /* Fondo blanco */
     padding: 20px;
     margin: 20px 0;  /* Espaciado entre los recuadros */
-    border-radius: 10px;  /* Bordes redondeados */
+    border-radius: 15px;  /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave */
     text-align: left;  /* Alineación del texto a la izquierda */
 }

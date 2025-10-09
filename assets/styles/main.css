@@ -278,7 +278,7 @@ footer p{
 /* Estilo para el botón de GitHub */
 .btn-github {
     background-color: #333;
-    border: 2px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: white;
 }
 
@@ -293,7 +293,7 @@ footer p{
 
 .btn-mail {
     background-color: #e0e0e0;
-    border: 2px solid #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: black;
 }
 
@@ -307,7 +307,7 @@ footer p{
 /* Estilo para el botón de LinkedIn */
 .btn-linkedin {
     background-color: #547e9b;
-    border: 2px solid #547e9b;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: white;
 }
 
@@ -351,7 +351,7 @@ footer p{
 
 h2 {
     font-family: 'Courier New', sans-serif;
-    font-size: 60px;
+    font-size: 50px;
     color:#547e9b;
 }
 
