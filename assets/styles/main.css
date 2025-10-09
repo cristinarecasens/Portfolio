@@ -126,8 +126,8 @@ nav .flags {
 
 /* Estilo para las banderas */
 nav .flag {
-    width: 25px; /* Aumentamos el tamaño de las banderas */
-    height: 25px;
+    width: 30px; /* Aumentamos el tamaño de las banderas */
+    height: 30px;
     border-radius: 50%; /* Hace las banderas circulares */
     background-size: cover; /* Asegura que la imagen se ajuste al tamaño del contenedor */
     background-position: center; /* Centra la imagen dentro del contenedor */
@@ -169,6 +169,7 @@ nav .flag-link {
   display: flex;
   gap: 10px;
   align-items: center;
+
 }
 
 /* Responsive: ocultar menu-content y mostrar botón */
