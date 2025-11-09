@@ -9,14 +9,14 @@ It includes an introduction about me, featured projects, formation and contact i
 🖼️ **Preview**
 
 🛠️ **Built With**  
-HTML5  
-CSS3   
-JavaScript  
+· HTML5  
+· CSS3   
+· JavaScript  
 
 ✨ **Features**  
-Homepage with personal introduction  
-Projects section with GitHub and Demo links  
-Skills section  
-Formation section  
-Contact section  
-Fully responsive design  
+· Homepage with personal introduction  
+· Projects section with GitHub and Demo links  
+· Skills section  
+· Formation section  
+· Contact section  
+· Fully responsive design  
