@@ -11,10 +11,6 @@ Here you’ll find:
 🔗 **Live Demo**  
 👉 [Visit my portfolio](https://cristinarecasens.com)
 
-🖼️ **Preview**
-![Portoflio Preveiew](assets/images/portada.png)  
-
-
 🛠️ **Built With**  
 · HTML5  
 · CSS3   
