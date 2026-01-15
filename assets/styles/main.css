@@ -44,7 +44,7 @@ header p{
 
 .typewriter {
     font-family:"Courier New", sans-serif;
-    display: inline-block;             /* Necesario para animar el ancho */
+    display: inline-block;             /* Necesasari per animar l'ample */
     overflow: hidden;
     white-space: nowrap;
     border-right: 2px solid white;    /* Cursor */
@@ -55,8 +55,8 @@ header p{
 
 @keyframes typing {
   0% { width: 0; }
-  37.5% { width: 42ch; }   /* escribir en 3s */
-  87.5% { width: 42ch; }   /* quedarse 4s */
+  37.5% { width: 42ch; }   /* escriure en 3s */
+  87.5% { width: 42ch; }   /* parar 4s */
   100% { width: 0; }       /* borrar en 1s */
 }
 
@@ -66,8 +66,8 @@ header p{
 }
 
 .content-wrapper {
-    max-width: 900px; /* Establece el ancho máximo */
-    margin: 0 auto;   /* Centra el contenido */
+    max-width: 900px; /* Estableix l'ample màxim */
+    margin: 0 auto;   /* Centra el contingut */
     padding: 0px;
 }
 
@@ -103,7 +103,7 @@ nav a {
 
 
 nav a:hover {
-    font-weight: bold; /* o usar transform: scale(...) si prefieres */
+    font-weight: bold; 
 }
 
 nav a.active {
@@ -113,12 +113,11 @@ nav a.active {
 }
 
 
-/* Contenedor de las banderas */
 nav .flags {
     display: flex;
     gap: 10px;
     align-items: center;
-    justify-content: flex-end; /* Alinea las banderas a la derecha */
+    justify-content: flex-end; 
     margin-left:40px;
     justify-content: center;
 }
@@ -126,30 +125,30 @@ nav .flags {
 
 /* Estilo para las banderas */
 nav .flag {
-    width: 30px; /* Aumentamos el tamaño de las banderas */
+    width: 30px; 
     height: 30px;
-    border-radius: 50%; /* Hace las banderas circulares */
-    background-size: cover; /* Asegura que la imagen se ajuste al tamaño del contenedor */
-    background-position: center; /* Centra la imagen dentro del contenedor */
+    border-radius: 50%; /* Circular */
+    background-size: cover; /* Asegura que la imatge s'ajusti a la mida del contenidor */
+    background-position: center; /* Centra la imatge dins del contenidor */
     opacity: 40%;
 
 }
 
 nav .flag.selected {
-    opacity: 90%; /* 100% de opacidad para la bandera seleccionada */
+    opacity: 90%; 
 }
 
 nav .flag-link {
-    text-decoration: none; /* Elimina el subrayado del enlace */
-    display: inline-flex; /* Usamos inline-flex para que se ajuste mejor al tamaño de la imagen */
-    align-items: center; /* Alineamos la imagen dentro del enlace */
-    justify-content: center; /* Alineamos la imagen dentro del enlace */
-    margin: 0; /* Eliminamos cualquier margen por defecto */
-    padding: 0; /* Eliminamos cualquier padding por defecto */
+    text-decoration: none; 
+    display: inline-flex;
+    align-items: center; 
+    justify-content: center; 
+    margin: 0; 
+    padding: 0; 
     min-width: 0px;
 }
 
-/* Botón hamburguesa oculto por defecto */
+/* Botó hamburguesa ocult por defecto */
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -164,7 +163,6 @@ nav .flag-link {
   border-radius: 2px;
 }
 
-/* NUEVO: Estilo por defecto en escritorio */
 .menu-content {
   display: flex;
   gap: 10px;
@@ -172,7 +170,7 @@ nav .flag-link {
 
 }
 
-/* Responsive: ocultar menu-content y mostrar botón */
+/* Responsive: ocultar menu-content i mostrar botó */
 @media (max-width: 1260px) {
 
     header{
@@ -193,12 +191,12 @@ nav .flag-link {
 
   .menu-toggle {
     display: flex;
-    justify-content: center; /* Centra los tres puntos */
-    align-items: center; /* Alinea verticalmente */
-    width: 100%; /* Hace que ocupe toda la barra */
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
   }
 
-  /* Estilo vertical para móvil */
+  /* Estil vertical per a mòbil */
   .menu-content {
     display: none;
     flex-direction: column;
@@ -219,11 +217,11 @@ nav .flag-link {
 
   .flags {
     display: flex;
-    justify-content: center; /* Asegura que las banderas se centren en el menú */
-    align-items: center;  /* Alinea las banderas verticalmente */
+    justify-content: center; 
+    align-items: center;  
     width: 100%;
     margin-top: 15px;
-    gap: 0px; /* Reducido para acercar las banderas */
+    gap: 0px; 
     padding:0px;
 
   }
@@ -268,7 +266,7 @@ footer p{
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
-    border-radius: 50px; /* Bordes redondeados */
+    border-radius: 50px; 
     transition: background-color 0.3s ease;
     text-transform: capitalize;
     width:150px;
@@ -277,7 +275,6 @@ footer p{
     
 }
 
-/* Estilo para el botón de GitHub */
 .btn-github {
     background-color: #333;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -288,8 +285,8 @@ footer p{
     color:white;
 }
 .btn-github img {
-    width: 25px;  /* Cambia el tamaño de la imagen SVG */
-    height: 25px; /* Cambia el tamaño de la imagen SVG */
+    width: 25px;  
+    height: 25px; 
     margin-right: 10px;
 }
 
@@ -301,8 +298,8 @@ footer p{
 
 
 .btn-mail img {
-    width: 25px;  /* Cambia el tamaño de la imagen SVG */
-    height: 25px; /* Cambia el tamaño de la imagen SVG */
+    width: 25px; 
+    height: 25px; 
     margin-right: 10px;
 }
 
@@ -318,8 +315,8 @@ footer p{
 }
 
 .btn-linkedin img {
-    width: 25px;  /* Cambia el tamaño de la imagen SVG */
-    height: 25px; /* Cambia el tamaño de la imagen SVG */
+    width: 25px;  
+    height: 25px; 
     margin-right: 10px;
 }
 
@@ -337,17 +334,17 @@ footer p{
   color: black;
 }
 
-/* Estilo para los íconos dentro de los botones */
+
 .social-buttons i {
-    margin-right: 10px; /* Espacio entre el icono y el texto */
+    margin-right: 10px; 
 }
 
 
 .g-recaptcha {
     margin: 20px 0;
-    transform: scale(0.85); /* Ajusta el tamaño del reCAPTCHA */
+    transform: scale(0.85); 
     transform-origin: 0 0;
-    max-width: 700px; /* Asegura que el captcha no sea más ancho que el formulario */
+    max-width: 700px; 
     width: 100%;
 }
 
@@ -358,12 +355,12 @@ h2 {
 }
 
 p {
-    line-height: 1.6; /* Puedes ajustar el valor según tus necesidades */
+    line-height: 1.6; 
     font-family: 'Roboto';
     
 }
 
-/* PI: Reglas para hacer el diseño responsive */
+
 @media only screen and (max-width: 768px) {
 
 
@@ -371,14 +368,14 @@ p {
         display:flex;
         flex-direction: column;
         align-items:center;
-        justify-content: center;   /* Centra verticalmente si hay altura disponible */
+        justify-content: center;   
         width: 100%;
-        height: 80vh;             /* O el alto que necesites */
-        padding: 0;                /* Asegúrate de que no haya padding que lo desplace */
-        box-sizing: border-box;    /* Asegura que padding no aumente el tamaño */
+        height: 80vh;             
+        padding: 0;                
+        box-sizing: border-box;    
     }
     
-    /* Ajustes para la imagen de "Sobre mi" */
+   
     .about-container {
         flex-direction: column;
         align-items: center;
@@ -427,7 +424,7 @@ p {
 
 }
 
-/* Para pantallas muy pequeñas como dispositivos móviles de menos de 375px */
+
 @media only screen and (max-width: 375px) {
     body {  
         overflow-x: hidden;
@@ -437,11 +434,11 @@ p {
         display:flex;
         flex-direction: column;
         align-items:center;
-        justify-content: center;   /* Centra verticalmente si hay altura disponible */
+        justify-content: center;   
         width: 100%;
-        height: 80vh;             /* O el alto que necesites */
-        padding: 0;                /* Asegúrate de que no haya padding que lo desplace */
-        box-sizing: border-box;    /* Asegura que padding no aumente el tamaño */
+        height: 80vh;             
+        padding: 0;               
+        box-sizing: border-box;   
     }
 
 
@@ -449,13 +446,13 @@ p {
     header h3 {
         max-width: 90vw;
         margin: 0 auto;
-        overflow-wrap: break-word; /* para que el texto se parta si es muy largo */
+        overflow-wrap: break-word; 
         box-sizing: border-box;
         font-size: 3.5vw;
     }
     
     
-    /* Reducción de márgenes y espaciado para pantallas pequeñas */
+   
     .content-wrapper {
         padding: 0px;
     }
@@ -481,20 +478,20 @@ p {
     }
 
     .menu-toggle {
-        width: 100vw;          /* 100% del viewport width */
-        max-width: 100%;       /* Nunca más ancho que el contenedor padre */
-        box-sizing: border-box; /* Padding y borde no aumentan el ancho total */
-        padding: 10px 20px;    /* Ejemplo, ajustar según diseño */
-        overflow-x: hidden;    /* Evita scroll horizontal */
+        width: 100vw;          
+        max-width: 100%;       
+        box-sizing: border-box; 
+        padding: 10px 20px;   
+        overflow-x: hidden;   
     }
 
     .flags {
         display: flex;
-        justify-content: center; /* Asegura que las banderas se centren en el menú */
-        align-items: center;  /* Alinea las banderas verticalmente */
+        justify-content: center; 
+        align-items: center; 
         width: 70%;
         margin: 0 auto;
-        gap: 0.5rem; /* Reducido para acercar las banderas */
+        gap: 0.5rem; 
         padding:0px;
     }
 }
@@ -504,6 +501,7 @@ p {
         font-size:30px !important;
     }
 }
+
 
 
 
