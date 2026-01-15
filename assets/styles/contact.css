@@ -9,7 +9,7 @@
 
 .contact-buttons {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+  grid-template-columns: repeat(2, 1fr); /* Dues columnes de la mateixa mida */
   gap: 20px;
   max-width: 900px;
   margin: auto;
@@ -18,8 +18,8 @@
 
 .contact-box {
   display: flex;
-  align-items: center;  /* Alinea los iconos verticalmente */
-  justify-content: flex-start;  /* Asegura que los iconos estén alineados a la izquierda */
+  align-items: center;  /* Alinea les icones verticalment */
+  justify-content: flex-start;  /* Asegura que les icones estiguin alineades a l'esquerra */
   background-color: white;
   border-radius: 15px;
   padding: 20px 30px;
@@ -27,7 +27,7 @@
   text-decoration: none;
   color: inherit;
   transition: background-color 0.3s ease;
-  text-align: left;  /* Asegura que el texto esté alineado a la izquierda */
+  text-align: left;  /* Assegura que el text estigui alineat a l'esquerra */
 }
 
 .contact-box:hover {
@@ -36,9 +36,9 @@
 
 .contact-icon {
   display: flex;
-  justify-content: center; /* Centra los iconos */
-  align-items: center;     /* Alinea verticalmente los iconos */
-  margin-right: 20px;      /* Espacio entre iconos y texto */
+  justify-content: center; /* Centra les icones */
+  align-items: center;     /* Alinea verticalment les icones */
+  margin-right: 20px;      /* Espai entre icones i text */
 }
 
 .contact-icon img {
@@ -50,9 +50,9 @@
 .contact-text {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centra el texto verticalmente dentro de la columna */
-  text-align: center; /* Alinea el texto horizontalmente en el centro */
-  flex-grow: 1; /* Asegura que el texto ocupe el espacio restante */
+  justify-content: center; /* Centra el text verticalment dins de la columna */
+  text-align: center; /* Alinea el text horizontalment al centre */
+  flex-grow: 1; /* Asegura que el text ocupi l'espai restant */
 }
 
 .contact-title {
@@ -70,14 +70,14 @@
 
 @media (max-width: 768px) {
   .contact-buttons {
-    grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    grid-template-columns: 1fr; /* Una columna en pantalles petites */
     max-width: 100%;
     padding: 0px;
     box-sizing: border-box;
   }
 
   .contact-box {
-    width: 100%;  /* Ocupa todo el ancho disponible */
+    width: 100%;  /* Ocupa tota l'amplada disponible */
     max-width: 100%;
     margin-bottom: 10px;
     height: auto;
@@ -89,5 +89,6 @@
     word-break: break-word;
     overflow-wrap: break-word;
   }
+
 
 }
