@@ -8,12 +8,12 @@
 }
 
 .experience-item {
-    background-color: white;  /* Fondo blanco */
+    background-color: white;  /* Fons blanc */
     padding: 20px;
-    margin: 20px 0;  /* Espaciado entre los recuadros */
-    border-radius: 15px;  /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave */
-    text-align: left;  /* Alineación del texto a la izquierda */
+    margin: 20px 0;  
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Ombra suau */
+    text-align: left;  /* Alineació del text a l'esquerra */
 }
 
 .experience-item h3 {
@@ -27,20 +27,21 @@
     color: #555;
 }
 
-/* Media query para pantallas pequeñas (móviles) */
+/* Media query per a pantalles petites (mòbils) */
 @media (max-width: 768px) {
     .experience-item {
-        flex-direction: column;  /* Cambiar la dirección a columna cuando la pantalla es pequeña */
-        text-align: center;  /* Centrar el texto */
+        flex-direction: column;  /* Cambiar la direcció a columna quan la pantalla és petita */
+        text-align: center;  /* Centrar el text */
     }
 
     .experience-item img {
-        width: 80%;  /* Ajustar el tamaño de la imagen para que se vea bien en pantallas pequeñas */
-        margin-left: 0;  /* Eliminar el margen izquierdo cuando estén apilados */
-        margin-top: 15px;  /* Espacio entre el texto y la imagen */
+        width: 80%;  
+        margin-left: 0;  
+        margin-top: 15px;  
     }
 
     .experience-item h3, .experience-item p {
-        max-width: 100%;  /* Deja que el texto ocupe todo el ancho disponible */
+        max-width: 100%;  
     }
 }
+
