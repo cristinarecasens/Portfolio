@@ -3,27 +3,27 @@
 .education-container {
     max-width: 900px;
     display: flex;
-    flex-wrap: wrap;  /* Permite que los elementos se ajusten a nuevas filas si no caben */
-    justify-content: space-between; /* Distribuye los elementos de manera equitativa */
-    align-items: flex-start; /* Alinea los elementos al principio de la fila */
+    flex-wrap: wrap;  /* Els elements s'adapten a altres files si no hi caben */
+    justify-content: space-between; /* Distribueix els elements de manera equitativa */
+    align-items: flex-start; /* Alinea els elements al principi de la fila */
     padding: 0px;
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    margin: 0 auto; /* Centra el contenidor horizontalment */
 }
 
 .education-item {             
-    flex-direction: column;      /* Apila los elementos en columna (de arriba a abajo) */
+    flex-direction: column;      /* Apila els elements en columna */
     justify-content: flex-start;
-    align-items: center;         /* Centra los elementos horizontalmente */
-    background-color: white;     /* Fondo blanco */
+    align-items: center;         
+    background-color: white;     
     padding: 20px;
-    margin: 10px;                /* Añade margen lateral para separarlos */
-    border-radius: 15px;         /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave */
-    text-align: center;          /* Alineación de texto en el centro */
-    width: calc(33% - 20px);      /* Ancho de los elementos, ajustado para tres elementos por fila */
-    max-width: 30%;              /* Asegura que no se expanda demasiado */
-    height: 740px;               /* Altura fija para cada item */
-    box-sizing: border-box;      /* Asegura que el padding y el border no aumenten el tamaño total del elemento */
+    margin: 10px;                
+    border-radius: 15px;         /* Bordes arrodonits */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Ombra suau */
+    text-align: center;          
+    width: calc(33% - 20px);      /* Amplada dels elements */
+    max-width: 30%;              /* Assegura que no s'expandeixi massa */
+    height: 740px;               /* Altura fixa par a cada item */
+    box-sizing: border-box;      /* Asegura que el padding i el border no augmentin la mida total de l'element */
 }
 
 .education-item:hover{
@@ -33,7 +33,7 @@
 .education-item h3 {
     color: #353535;
     font-size: 1.5rem;
-    flex-grow: 0;                /* No deja que el título crezca */
+    flex-grow: 0;                /* No deixa que el títol creixi */
 }
 
 .education-item h4{
@@ -43,22 +43,22 @@
 .education-item p {
     font-size: 1rem;
     color: #555;
-    flex-grow: 1;                /* Permite que el texto se ajuste a la altura disponible */
-    margin-bottom: 20px;         /* Añade algo de espacio debajo del texto */
+    flex-grow: 1;                /* Permet que el text s'ajusti a l'altura disponible */
+    margin-bottom: 20px;         
     font-family: 'Montserrat', sans-serif;
 }
 
 .education-item img {
-    width: 80%;                 /* Asegura que la imagen ocupe el 80% del espacio disponible */
-    height: auto;                /* Mantiene la relación de aspecto */      
+    width: 80%;                
+    height: auto;               
 }
 
 .titol-formacio{
     height: 150px;
-    align-items: center;      /* Centrado vertical */
-    justify-content: center;  /* Centrado horizontal */
-    display: flex;     /* Centra verticalmente */
-    padding: 0;            /* opcional, para dar espacio lateral */
+    align-items: center;      /* Centrat vertical */
+    justify-content: center;  /* Centrat horizontal */
+    display: flex;     /* Centrat verticalmente */
+    padding: 0;           
 }
 
 .data-formacio{
@@ -77,43 +77,44 @@
 }
 
 .descripcio-formacio {
-    align-items: center;      /* Centrado vertical */
-    justify-content: center;  /* Centrado horizontal */
-    height: 320px;            /* o la altura que necesites */
+    align-items: center;      /* Centrat vertical */
+    justify-content: center;  /* Centrat horizontal */
+    height: 320px;            /* o l'altura que necesites */
     margin: 0;
     padding: 0 10px;
 }
 
 .image-formacio {
-    display: flex;           /* Necesario para flexbox */
-    align-items: flex-end;   /* Alinea la imagen al fondo */
-    justify-content: center; /* Centra horizontalmente la imagen */
-    height: 110px;           /* altura fija */
+    display: flex;           
+    align-items: flex-end;   /* Alinea la imatge al fons */
+    justify-content: center; /* Centra horizontalmente la imatge */
+    height: 110px;           
 }
 
 
 
 @media screen and (max-width: 100px) {
     .education-item {
-        height: auto; /* Permite que el contenido ajuste su altura */
+        height: auto; 
     }
 }
 
 @media screen and (max-width: 768px) {
     .education-container {
-        flex-direction: column; /* Los elementos se apilan en columna */
-        align-items: center; /* Centra los elementos */
+        flex-direction: column; /* Elements s'apilan en columna */
+        align-items: center; /* Centra els elements */
         width:100%;
         padding: 0 10px;
         overflow-x: hidden;
     }
 
     .education-item {
-        width: calc(100% - 20px); /* Ocupa todo el ancho disponible */
-        max-width: 100%; /* Asegura que se adapte correctamente */
-        margin-bottom: 10px; /* Elimina los márgenes para que se ajuste bien */
-        height: auto; /* Permite que el contenido ajuste su altura */
-        padding: 15px; /* Ajusta el padding para que no ocupe demasiado espacio */
+        width: calc(100% - 20px); /* Ocupa tota l'amplada disponible */
+        max-width: 100%; /* Asegura que s'adapti correctament */
+        margin-bottom: 10px; /* Elimina els marges per a que s'ajusti bé */
+        height: auto; /* Permet que el contingut ajusti la seva altura */
+        padding: 15px; /* Ajusta el padding per a que no ocupi massa espai */
     }
+
 
 }
