@@ -45,12 +45,12 @@
 
 a {
     color: #0077b5;/* color */
-    text-decoration: none; /* quita el subrayado */
-    font-weight: bold; /* lo hace un poco más vistoso */
+    text-decoration: none; /* treu el subratllat */
+    font-weight: bold; /* negreta */
 }
 
 a:hover {
-    color: #014468; /* cambia a otro tono al pasar el ratón */
+    color: #014468; /* canvia el color al passar el ratolí per sobre */
 }
 
 @media only screen and (max-width: 375px) {
@@ -60,4 +60,5 @@ a:hover {
         
     }
 }
+
 
