@@ -3,27 +3,27 @@
 .education-container {
     max-width: 900px;
     display: flex;
-    flex-wrap: wrap;  /* Els elements s'adapten a altres files si no hi caben */
-    justify-content: space-between; /* Distribueix els elements de manera equitativa */
-    align-items: flex-start; /* Alinea els elements al principi de la fila */
+    flex-wrap: wrap;  
+    justify-content: space-between; 
+    align-items: flex-start; 
     padding: 0px;
-    margin: 0 auto; /* Centra el contenidor horizontalment */
+    margin: 0 auto; 
 }
 
 .education-item {             
-    flex-direction: column;      /* Apila els elements en columna */
+    flex-direction: column;      
     justify-content: flex-start;
     align-items: center;         
     background-color: white;     
     padding: 20px;
     margin: 10px;                
-    border-radius: 15px;         /* Bordes arrodonits */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Ombra suau */
+    border-radius: 15px;        
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
     text-align: center;          
-    width: calc(33% - 20px);      /* Amplada dels elements */
-    max-width: 30%;              /* Assegura que no s'expandeixi massa */
-    height: 740px;               /* Altura fixa par a cada item */
-    box-sizing: border-box;      /* Asegura que el padding i el border no augmentin la mida total de l'element */
+    width: calc(33% - 20px);      
+    max-width: 30%;              
+    height: 740px;              
+    box-sizing: border-box;     
 }
 
 .education-item:hover{
@@ -33,7 +33,7 @@
 .education-item h3 {
     color: #353535;
     font-size: 1.5rem;
-    flex-grow: 0;                /* No deixa que el títol creixi */
+    flex-grow: 0;                
 }
 
 .education-item h4{
@@ -43,7 +43,7 @@
 .education-item p {
     font-size: 1rem;
     color: #555;
-    flex-grow: 1;                /* Permet que el text s'ajusti a l'altura disponible */
+    flex-grow: 1;                
     margin-bottom: 20px;         
     font-family: 'Montserrat', sans-serif;
 }
@@ -55,9 +55,9 @@
 
 .titol-formacio{
     height: 150px;
-    align-items: center;      /* Centrat vertical */
-    justify-content: center;  /* Centrat horizontal */
-    display: flex;     /* Centrat verticalmente */
+    align-items: center;      
+    justify-content: center;  
+    display: flex;     
     padding: 0;           
 }
 
@@ -77,21 +77,19 @@
 }
 
 .descripcio-formacio {
-    align-items: center;      /* Centrat vertical */
-    justify-content: center;  /* Centrat horizontal */
-    height: 320px;            /* o l'altura que necesites */
+    align-items: center;      
+    justify-content: center;  
+    height: 320px;            
     margin: 0;
     padding: 0 10px;
 }
 
 .image-formacio {
     display: flex;           
-    align-items: flex-end;   /* Alinea la imatge al fons */
-    justify-content: center; /* Centra horizontalmente la imatge */
+    align-items: flex-end;   
+    justify-content: center; 
     height: 110px;           
 }
-
-
 
 @media screen and (max-width: 100px) {
     .education-item {
@@ -101,20 +99,19 @@
 
 @media screen and (max-width: 768px) {
     .education-container {
-        flex-direction: column; /* Elements s'apilan en columna */
-        align-items: center; /* Centra els elements */
+        flex-direction: column; 
+        align-items: center; 
         width:100%;
         padding: 0 10px;
         overflow-x: hidden;
     }
 
     .education-item {
-        width: calc(100% - 20px); /* Ocupa tota l'amplada disponible */
-        max-width: 100%; /* Asegura que s'adapti correctament */
-        margin-bottom: 10px; /* Elimina els marges per a que s'ajusti bé */
-        height: auto; /* Permet que el contingut ajusti la seva altura */
-        padding: 15px; /* Ajusta el padding per a que no ocupi massa espai */
+        width: calc(100% - 20px); 
+        max-width: 100%; 
+        margin-bottom: 10px; 
+        height: auto; 
+        padding: 15px; 
     }
-
 
 }

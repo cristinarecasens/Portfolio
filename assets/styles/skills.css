@@ -15,8 +15,8 @@
 
 .skill {
     display: flex;
-    flex-direction: column; /* Asegura que el texto esté debajo de la imagen */
-    align-items: center;  /* Centra el contenido */
+    flex-direction: column; 
+    align-items: center;  
     text-align: center;
 }
 
@@ -32,7 +32,7 @@
 
 .skill p {
     font-family: 'Montserrat', sans-serif;
-    margin-top: 10px; /* Espaciado entre imagen y texto */
+    margin-top: 10px; 
     font-size: 16px;
     
 }

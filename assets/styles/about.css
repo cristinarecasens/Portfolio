@@ -13,7 +13,7 @@
 
 .about p {
     font-family: 'Montserrat', sans-serif;
-  margin-bottom: 10px;  
+    margin-bottom: 10px;  
 }
 
 .about-container {
@@ -44,20 +44,19 @@
 }
 
 a {
-    color: #0077b5;/* color */
-    text-decoration: none; /* treu el subratllat */
-    font-weight: bold; /* negreta */
+    color: #0077b5;
+    text-decoration: none; 
+    font-weight: bold; 
 }
 
 a:hover {
-    color: #014468; /* canvia el color al passar el ratolí per sobre */
+    color: #014468; 
 }
 
 @media only screen and (max-width: 375px) {
     .about-image {
         width: 90%;  
         height: auto;  
-        
     }
 }
 

@@ -8,12 +8,12 @@
 }
 
 .projects-item {
-    background-color: white;  /* Fondo blanco */
+    background-color: white;  
     padding: 20px;
-    margin: 40px 0;  /* Espaciado entre los recuadros */
-    border-radius: 15px;  /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave */
-    text-align: left;  /* Alineación del texto a la izquierda */
+    margin: 40px 0;  
+    border-radius: 15px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+    text-align: left;  
 }
 
 .projects-item span{
@@ -48,50 +48,46 @@
 }
 
 .btn-demo {
-    display: inline-flex; /* Para colocar el SVG y el texto en una línea */
-    align-items: center; /* Alinea el SVG y el texto verticalmente */
-    padding: 12px 24px; /* Más relleno para hacerlo más grande */
-    background-color: #6293c4; /* Azul claro de fondo */
-    color: white; /* Color del texto */
-    text-decoration: none; /* Eliminar subrayado en el texto */
-    border-radius: 50px; /* Bordes más redondeados */
-    font-size: 16px; /* Tamaño de la fuente */
-    transition: background-color 0.3s ease; /* Solo la transición del color de fondo */
+    display: inline-flex; 
+    align-items: center; 
+    padding: 12px 24px; 
+    background-color: #6293c4; 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 50px; 
+    font-size: 16px; 
+    transition: background-color 0.3s ease; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Efecto hover */
 .btn-demo:hover {
-    background-color: #46709b; /* Azul un poco más oscuro al pasar el ratón */
+    background-color: #46709b; 
     color:white;
 }
 
 .btn-git {
-    display: inline-flex; /* Para colocar el SVG y el texto en una línea */
-    align-items: center; /* Alinea el SVG y el texto verticalmente */
-    padding: 12px 24px; /* Más relleno para hacerlo más grande */
-    background-color: #999999; /* Azul claro de fondo */
-    color: white; /* Color del texto */
-    text-decoration: none; /* Eliminar subrayado en el texto */
-    border-radius: 50px; /* Bordes más redondeados */
-    font-size: 16px; /* Tamaño de la fuente */
-    transition: background-color 0.3s ease; /* Solo la transición del color de fondo */
+    display: inline-flex; 
+    align-items: center; 
+    padding: 12px 24px; 
+    background-color: #999999; 
+    color: white; 
+    text-decoration: none;
+    border-radius: 50px; 
+    font-size: 16px; 
+    transition: background-color 0.3s ease; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Efecto hover */
 .btn-git:hover {
-    background-color: #505050; /* Azul un poco más oscuro al pasar el ratón */
+    background-color: #505050; 
     color:white;
 }
 
-/* Estilo para el SVG dentro del botón */
 .demo-icon {
-    width: 24px; /* Ajusta el tamaño del SVG */
-    height: 24px; /* Ajusta el tamaño del SVG */
-    margin-right: 8px; /* Espacio entre el SVG y el texto */
+    width: 24px; 
+    height: 24px; 
+    margin-right: 8px; 
 }
-
 
 .made-with {
     margin-top: 10px;
@@ -106,7 +102,6 @@
     font-weight: bold;
 }
 
-/* Estilos para los iconos */
 .made-with .icon {
     width: 24px;
     height: 24px;
@@ -115,39 +110,37 @@
 }
 
 .projects-content {
-    display: flex; /* Utilizamos flexbox para alinear la imagen y el texto */
-    justify-content: space-between; /* Asegura que la imagen esté a la derecha */
-    align-items: center; /* Centra el contenido verticalmente */
-    margin-top: 20px; /* Espacio entre el texto y la foto */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-top: 20px; 
 }
 
-/* Estilo para la imagen del proyecto */
 .project-image {
-    width: 500px; /* Ajusta el tamaño de la imagen */
-    height: auto; /* Mantiene la proporción de la imagen */
-    margin-left: 20px; /* Añade un espacio entre el texto y la imagen */
+    width: 500px; 
+    height: auto;
+    margin-left: 20px; 
     border-radius: 15px;
 }
 
-/* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
     .projects-content {
-        flex-direction: column;  /* Cambiar la dirección a columna para pantallas pequeñas */
-        text-align: center;  /* Centrar el texto y la imagen */
+        flex-direction: column;  
+        text-align: center; 
     }
 
     .project-image {
-        width: 80%;  /* La imagen ocupará el 80% del contenedor */
-        margin-left: 0;  /* Eliminar margen cuando se apilen */
-        margin: 20px;  /* Espacio entre el texto y la imagen */
+        width: 80%;  
+        margin-left: 0;  
+        margin: 20px; 
     }
     
     .projects-item {
-        text-align: center; /* Asegura que el texto esté centrado también en pantallas pequeñas */
+        text-align: center; 
     }
 
     .projects-buttons {
-        margin: 10px auto; /* Centra los botones horizontalmente */
-        display: inline-block; /* Cambia a bloque en línea para que se centre */
+        margin: 10px auto; 
+        display: inline-block; 
     }
 }
