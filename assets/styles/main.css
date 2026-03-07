@@ -12,6 +12,9 @@ body {
     padding: 0;
     background-color: #ffffff;
     color: #333;
+}
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -37,9 +40,15 @@ header h1{
 
 header p{
     color: rgb(51, 51, 51);
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 0px;
     font-family: 'Montserrat', sans-serif;
+}
+
+header .subtitol-h2{
+    font-size: 32px;
+    color:#30546d;
+    margin-bottom: 15px;
 }
 
 .typewriter {
@@ -54,15 +63,15 @@ header p{
 }
 
 @keyframes typing {
-  0% { width: 0; }
-  37.5% { width: 42ch; }   /* escriure en 3s */
-  87.5% { width: 42ch; }   /* parar 4s */
-  100% { width: 0; }       /* borrar en 1s */
+    0% { width: 0; }
+    37.5% { width: 42ch; }   /* escriure en 3s */
+    87.5% { width: 42ch; }   /* parar 4s */
+    100% { width: 0; }       /* borrar en 1s */
 }
 
 
 @keyframes blink {
-  50% { border-color: transparent; }
+    50% { border-color: transparent; }
 }
 
 .content-wrapper {
@@ -173,9 +182,18 @@ nav .flag-link {
         padding-bottom: 100px;
     }
 
+    header p{
+        font-size: 1rem;
+    }
+
     header h1{
-        font-size:65px !important;
+        font-size: 3.8rem;
         margin-bottom: 10px;
+    }
+
+    header .subtitol-h2{
+        font-size: 1.7rem;
+        color:#30546d;
     }
 
     nav {
@@ -219,8 +237,8 @@ nav .flag-link {
         padding:0px;
     }
 
-    h2{
-        font-size: 50px !important;
+    section h2{
+        font-size: 50px;
     }
 }
 
@@ -244,7 +262,7 @@ footer p{
 }
 
 .social-buttons {
-        margin-top: 20px;
+        margin-top: 40px;
         text-align: center;
     }
 
@@ -287,7 +305,6 @@ footer p{
     color: black;
 }
 
-
 .btn-mail img {
     width: 25px; 
     height: 25px; 
@@ -308,11 +325,6 @@ footer p{
     width: 25px;  
     height: 25px; 
     margin-right: 10px;
-}
-
-.social-buttons a:hover {
-    opacity: 0.8;
-    color:white;
 }
 
 .social-buttons a:hover {
@@ -390,11 +402,15 @@ p {
     }
 
     header h1 {
-        font-size: 2em;
+        font-size: 3rem;
+    }
+
+    header .subtitol-h2{
+        font-size: 1.4rem;
     }
 
     header h3 {
-        font-size: 1em;
+        font-size: 0.95rem;
     }
 
     section h2 {

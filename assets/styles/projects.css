@@ -7,6 +7,45 @@
     text-align: center;
 }
 
+.project-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.project-tab {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 24px;
+    border: 2px solid #9bbcd4;
+    border-radius: 30px;
+    background: white;
+    color: #547e9b;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.project-tab:hover {
+    background: #d8eaf7;
+}
+
+.project-tab.active {
+    background: #547e9b;
+    color: white;
+    border-color: #547e9b;
+}
+
+.project-tab-content {
+    display: none;
+}
+
+.project-tab-content.active {
+    display: block;
+}
+
 .projects-item {
     background-color: white;  
     padding: 20px;
@@ -123,6 +162,19 @@
     border-radius: 15px;
 }
 
+.tag {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #547e9b;
+    background-color: #d8eaf7;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-left: 8px;
+    vertical-align: middle;
+    letter-spacing: 0.3px;
+}
+
 @media (max-width: 768px) {
     .projects-content {
         flex-direction: column;  
@@ -139,8 +191,32 @@
         text-align: center; 
     }
 
+    .projects-item h3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .project-tab {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+
+    .tag {
+        margin-left: 0;
+        font-size: 0.7rem;
+        padding: 3px 10px;
+    }
+
     .projects-buttons {
         margin: 10px auto; 
         display: inline-block; 
+    }
+
+    .btn-demo,
+    .btn-git {
+        font-size: 13px;
+        padding: 8px 18px;
     }
 }
