@@ -29,6 +29,3 @@ Here you'll find:
 · Multi-language support (Catalan, Spanish, English)  
 · Fully responsive design  
 
-## 📸 Preview
-
-![Portfolio preview](https://i.postimg.cc/6QrKFYZW/portada.png)
