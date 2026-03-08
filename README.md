@@ -1,25 +1,34 @@
-# 🌐 Personal portfolio - Cristina Recasens
+# 🌐 Personal Portfolio — Cristina Recasens
 
-This project is my personal portfolio website, where I showcase my programming, data analysis, and application development projects.
-It includes an introduction about me, featured projects, formation and contact information.
+Personal portfolio website where I showcase my software development, data analysis and application projects.  
+It includes an introduction about me, featured projects, skills, education and contact information.
 
-Here you’ll find:
+Here you'll find:  
 · My featured programming and data analysis projects 🧠  
 · A bit about who I am 💬  
-· How to contact me 📬  
+· How to get in touch 📬  
 
-🔗 **Live Demo**  
-👉 [Visit my portfolio](https://cristinarecasens.com)
+## 🔗 Live Demo
 
-🛠️ **Built With**  
+👉 **[cristinarecasens.com](https://cristinarecasens.com)**
+
+## 🛠️ Built With
+
 · HTML5  
-· CSS3   
+· CSS3  
 · JavaScript  
 
-✨ **Features**  
-· Homepage with personal introduction  
-· Projects section with GitHub and Demo links  
-· Skills section  
-· Formation section  
+## ✨ Features
+
+· Personal introduction with social links  
+· Software projects section with live demos and GitHub links  
+· Data analysis projects section  
+· Skills overview  
+· Education & experience timeline  
 · Contact section  
+· Multi-language support (Catalan, Spanish, English)  
 · Fully responsive design  
+
+## 📸 Preview
+
+![Portfolio preview](https://i.postimg.cc/6QrKFYZW/portada.png)
